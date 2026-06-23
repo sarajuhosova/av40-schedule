@@ -1,44 +1,31 @@
 @use "settings" as *;
 
+// --------------------------------------------//
+// GENERAL ----------------------------------- //
+// --------------------------------------------//
+
 body {
     padding: 2em;
     width: 95%;
     margin: 0 auto;
 }
 
-h1 {
+h1, h2 {
     color: $blue;
 }
 
-.legend {
-    display: flex;
-}
-
-.legend span {
-    font-size: small;
-
-    margin: 0 1em 0 0;
-    padding: .5em 1em;
-    text-decoration: none;
-    font-weight: bold;
-
-    border-radius: $border-radius;
-    border-style: solid;
-    border-width: 2px;
-    color: white;
-}
-
-.legend .upcoming  { background-color: $blue;   border-color: $blue; }
-.legend .past      { background-color: $gray;   border-color: $gray; }
-.legend .cancelled { background-color: $orange; border-color: $orange; }
+// --------------------------------------------//
+// NAVIGATION BAR ---------------------------- //
+// --------------------------------------------//
 
 .navigation {
-    margin: 1em 0 0 0;
     display: flex;
     justify-content: space-between;
 }
 
-.navigation .prev, .navigation .next {
+.navigation .button,
+.navigation .prev,
+.navigation .next {
     padding: .5em 1em;
     text-decoration: none;
     font-weight: bold;
@@ -67,72 +54,136 @@ h1 {
     float: right;
 }
 
-.training-grid {
+// --------------------------------------------//
+// LEGEND ------------------------------------ //
+// --------------------------------------------//
+
+.legend {
+    display: flex;
+    margin: 1em 0 0 0;
+}
+
+.legend span {
+    font-size: small;
+
+    margin: 0 1em 0 0;
+    padding: .5em 1em;
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: $border-radius;
+    border-style: solid;
+    border-width: 2px;
+    color: white;
+}
+
+.legend .upcoming  { background-color: $blue;   border-color: $blue; }
+.legend .past      { background-color: $gray;   border-color: $gray; }
+.legend .cancelled { background-color: $orange; border-color: $orange; }
+
+// --------------------------------------------//
+// GRID -------------------------------------- //
+// --------------------------------------------//
+
+.grid {
     margin: 1em;
     display: grid;
-    grid-template-columns: 5fr 5fr 2fr;
     gap: 1em;
 }
 
-.training {
+.schedule {
+    grid-template-columns: 5fr 5fr 2fr;
+}
+
+.trainers {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-item {
     border-radius: $border-radius;
 }
 
-.training-header {
+.grid-header {
     color: #fff;
     padding: 1em 1em 0.5em 1em;
     border-radius: $border-radius $border-radius 0 0;
+    background-color: $blue;
 }
 
-.upcoming  .training-header { background-color: $blue; }
-.past      .training-header { background-color: $gray; }
-.cancelled .training-header { background-color: $orange; }
+.upcoming  .grid-header { background-color: $blue; }
+.past      .grid-header { background-color: $gray; }
+.cancelled .grid-header { background-color: $orange; }
 
-.training-header h3,
-.training-header h4,
-.training-header p {
+.grid-header h3,
+.grid-header h4,
+.grid-header p {
     margin: 0;
 }
 
-.training table {
+.grid-item table {
     width: 100%;
     border-collapse: collapse;
     border-radius: $border-radius;
     border-width: 1px;
     border-style: solid;
+    border-color: $blue;
 }
 
 .upcoming  table { border-color: $blue; }
 .past      table { border-color: $gray; }
 .cancelled table { border-color: $orange; }
 
-.training tr {
+.grid-item tr {
     border-top-width: 1px;
     border-top-style: solid;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     padding: 0 2em 0 2em;
+    border-top-color: $blue;   border-bottom-color: $blue;
 }
 
 .upcoming  tr { border-top-color: $blue;   border-bottom-color: $blue; }
 .past      tr { border-top-color: $gray;   border-bottom-color: $gray; }
 .cancelled tr { border-top-color: $orange; border-bottom-color: $orange; }
 
-.training td {
+.grid-item td {
     padding: 0.5em;
 }
 
-.training .warmup {
+.grid-item .warmup {
     padding: 0.5em 0 0.5em 0;
     text-align: center;
     font-family: monospace;
 }
 
-.training .group {
-    text-align: right;
-    font-weight: bold;
+.grid-item .right  { text-align: right; }
+.grid-item .bold   { font-weight: bold; }
+.grid-item .italic { font-style: italic; }
+
+tr.empty {
+    color: $gray;
+    font-style: italic;
 }
 
-.training .trainer {
-    font-style: italic;
+tr.cancelled {
+    text-decoration: line-through;
+}
+
+// --------------------------------------------//
+// TRAINERS ---------------------------------- //
+// --------------------------------------------//
+
+.trainer summary {
+    margin: 1em 0 0 0;
+    padding: .5em 1em;
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: $border-radius;
+    border-style: solid;
+    border-width: 2px;
+    color: white;
+
+    background-color: $blue;
+    border-color: $blue;
 }

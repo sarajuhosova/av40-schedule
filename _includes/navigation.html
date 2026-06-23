@@ -4,6 +4,7 @@
     {% else %}
         <span class="prev"></span>
     {% endif %}
+    <a class="button" href="{{ site.baseurl }}/trainers.html">Naar de trainerskalendar</a>
     {% if page.next %}
         <a class="next" href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.date | date: "%Y" }} {{ page.next.title }} →</a>
     {% else %}

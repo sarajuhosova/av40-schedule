@@ -1,0 +1,45 @@
+<div class="grid trainers">
+    {% assign trainings = site.data.schedule.2026.q3 %}
+
+    {% capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture %}
+    {% capture today %}{{ 'now' | date: "%Y-%m-%d" }}{% endcapture %}
+
+    {% for trainer in site.data.trainers %}
+        <div class="grid-item">
+            <div class="grid-header">
+                <h4>{{ trainer.name }}</h4>
+            </div>
+            <table>
+                {% assign counter = 0 %}
+                {% for day in trainings %}
+                    {% capture trainingtime %}{{ day.date | date: '%s' }}{% endcapture %}
+                    {% if trainingtime > nowunix or day.date == today %}
+
+                        {% assign type = "ongoing" %}
+                        {% if day.cancelled %}
+                            {% assign type = "cancelled" %}
+                        {% endif %}
+
+                        {% for training in day.trainings %}
+                            {% if training.trainer contains trainer.name %}
+
+                                <tr class="{{ type }}">
+                                    <td class="right">{{ day.day }}</td>
+                                    <td class="italic">{{ day.date | date: "%Y-%m-%d" }}</td>
+                                    <td class="bold right">{{ training.group }}</td>
+                                    <td>{{ training.training.core }}</td>
+                                </tr>
+                                {% assign counter = counter | plus: 1 %}
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                {% endfor %}
+                {% if counter == 0 %}
+                    <tr class="empty">
+                        <td colspan="3">geen trainingen</td>
+                    </tr>
+                {% endif %}
+            </table>
+        </div>
+    {% endfor %}
+</div>

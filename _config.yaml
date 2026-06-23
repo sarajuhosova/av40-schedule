@@ -3,6 +3,8 @@ baseurl: "/av40-schedule"
 
 permalink: /:year/:title:output_ext
 
+future: true
+
 plugins:
   - jekyll-relative-links
   - jekyll-redirect-from

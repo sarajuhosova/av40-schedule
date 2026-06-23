@@ -578,7 +578,7 @@
       trainer: ["Kees"]
     - group: "wandelen"
       trainer: ["Quirine"]
-- date: "2026-09-22"
+- date: "2026-09-29"
   day: "Dinsdag"
   trainings:
     - group: "uit"
@@ -598,7 +598,7 @@
       warmup: true
       training: 
         core: "45' fartlek <tt>variabel</tt>"
-- date: "2026-09-24"
+- date: "2026-10-01"
   day: "Donderdag"
   trainings:
     - group: "basis"
@@ -608,7 +608,7 @@
       trainer: ["Klaas"]
     - group: "baan"
       trainer: ["Wilbert", "Sára"]
-- date: "2026-09-26"
+- date: "2026-10-03"
   day: "Zaterdag"
   trainings:
     - group: "hardlopen"

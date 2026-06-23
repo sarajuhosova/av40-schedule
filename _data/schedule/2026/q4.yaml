@@ -1,0 +1,29 @@
+- date: "2026-10-06"
+  day: "Dinsdag"
+  trainings:
+    - group: "1"
+      trainer: ["??"]
+    - group: "2"
+      trainer: ["??"]
+    - group: "3"
+      trainer: ["??"]
+    - group: "4"
+      trainer: ["??"]
+    - group: "5"
+      trainer: ["??"]
+- date: "2026-10-08"
+  day: "Donderdag"
+  trainings:
+    - group: "basis"
+      trainer: ["??"]
+    - group: "weg"
+      trainer: ["??"]
+    - group: "baan"
+      trainer: ["??", "??"]
+- date: "2026-10-10"
+  day: "Zaterdag"
+  trainings:
+    - group: "hardlopen"
+      trainer: ["??"]
+    - group: "wandelen"
+      trainer: ["??"]
