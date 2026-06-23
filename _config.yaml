@@ -1,5 +1,5 @@
 title: AV'40 Wegatletiekschema
-url: "https://sarajuhosova.com/av40-schedule/"
+baseurl: "/av40-schedule"
 
 plugins:
   - jekyll-relative-links
