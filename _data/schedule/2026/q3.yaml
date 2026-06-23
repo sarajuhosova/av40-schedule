@@ -186,12 +186,12 @@
     - group: "4"
       trainer: ["Peter"]
       training:
-        core: "6x 1K <tt>alternating 90% / 75% 10K</tt>"
+        core: "6x 1K <tt>afwisselend 90% / 75% 10K</tt>"
         break: "geen pauze"
     - group: "5"
       trainer: ["Niels"]
       training:
-        core: "6x 1K <tt>alternating 90% / 75% 10K</tt>"
+        core: "6x 1K <tt>afwisselend 90% / 75% 10K</tt>"
         break: "geen pauze"
 - date: "2026-07-23"
   day: "Donderdag"
