@@ -1,0 +1,27 @@
+<div class="paces">
+    <table>
+    {% for row in include.paces %}
+        {% if forloop.first %}
+        <tr>
+        {% for pair in row %}
+            <th>{{ pair[0] }}</th>
+        {% endfor %}
+        </tr>
+        {% endif %}
+        <tr>
+            {% assign header = true %}
+            {% for pair in row %}
+                {% assign type = "" %}
+                {% if header %}
+                    {% assign type = "target" %}
+                    {% assign header = false %}
+                {% endif %}
+                {% if pair[0] == "100%" %}
+                    {% assign type = "target" %}
+                {% endif %}
+                <td class="{{ type }}">{{ pair[1] }}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+    </table>
+</div>

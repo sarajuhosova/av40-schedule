@@ -19,13 +19,15 @@ h1, h2 {
 // --------------------------------------------//
 
 .navigation {
-    display: flex;
+    display: grid;
     justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .navigation .button,
 .navigation .prev,
 .navigation .next {
+    margin: .5em 1em .5em 1em;
     padding: .5em 1em;
     text-decoration: none;
     font-weight: bold;
@@ -186,4 +188,55 @@ tr.cancelled {
 
     background-color: $blue;
     border-color: $blue;
+}
+
+// --------------------------------------------//
+// PACE TABLE -------------------------------- //
+// --------------------------------------------//
+
+body.paces {
+    width: 60%;
+    align-items: center;
+}
+
+.navigation.paces {
+    justify-content: left;
+}
+
+.paces .button {
+    margin-right: 1em;
+}
+
+.paces span {
+    background-color: $blue;
+    border-color: $blue;
+}
+
+div.paces {
+    margin-top: 1em;
+}
+
+.paces table {
+    border-collapse: collapse;
+    border-radius: $border-radius;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $blue;
+}
+
+.paces th,
+.paces .target {
+    background-color: $blue;
+    color: white;
+}
+
+.paces td,
+.paces th {
+    padding: 0.5em;
+    text-align: center;
+}
+
+.paces tr:hover {
+    background-color: $gray;
+    // color: white;
 }

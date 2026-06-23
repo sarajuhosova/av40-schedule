@@ -1,0 +1,20 @@
+<div class="navigation paces">
+    {% if include.selected == "5K" %}
+        <span class="button">5K</span>
+    {% else %}
+        <a class="button" href="{{ site.baseurl }}/paces/5K">5K</a>
+    {% endif %}
+
+    {% if include.selected == "10K" %}
+        <span class="button">10K</span>
+    {% else %}
+        <a class="button" href="{{ site.baseurl }}/paces/10K">10K</a>
+    {% endif %}
+
+
+    {% if include.selected == "HM" %}
+        <span class="button">Halve Marathon</span>
+    {% else %}
+        <a class="button" href="{{ site.baseurl }}/paces/HM">Halve Marathon</a>
+    {% endif %}
+</div>
