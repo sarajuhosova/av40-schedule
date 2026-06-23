@@ -5,28 +5,28 @@
       - group: "1"
         trainer: ["Julie"]
         training:
-          core: "2x 18'"
+          core: "2x 18' <tt>T1-2</tt>"
           break: "P2'"
       - group: "2"
         trainer: ["Corrine"]
         training: 
-          core: "2x 20'"
+          core: "2x 20' <tt>T1-2</tt>"
           break: "P2'"
       - group: "3"
         trainer: ["Maurice"]
         training: 
-          core: "2x 22'"
+          core: "2x 22' <tt>T1-2</tt>"
           break: "P2'"
       - group: "4"
         trainer: ["Henry"]
         training: 
-          core: "2x 23'"
+          core: "2x 23' <tt>T1-2</tt>"
           break: "P2'"
       - group: "5"
         warmup: true
         trainer: ["Wilbert"]
         training: 
-          core: "2x 24'"
+          core: "2x 24' <tt>T1-2</tt>"
           break: "P2'"
   - date: "2026-06-18"
     day: "Donderdag"
@@ -36,22 +36,22 @@
         trainer: ["Liane"]
         warmup: true
         training: 
-          core: "5x 7'"
+          core: "5x 7' <tt>T2</tt>"
           break: "P90\""
       - group: "2 + 3"
         trainer: ["Henry"]
         training: 
-          core: "6x 7'"
+          core: "6x 7' <tt>T2</tt>"
           break: "P1'"
       - group: "4 + 5"
         trainer: ["Sander"]
         training: 
-          core: "7x 7'"
+          core: "7x 7' <tt>T2</tt>"
           break: "P1'"
       - group: "baan"
         trainer: ["Wilbert", "Niels"]
         training: 
-          core: "5x (800 T2 + 400 T3)"
+          core: "5x (800 <tt>T2</tt> + 400 <tt>T3</tt>)"
           break: "P2'"
   - date: "2026-06-20"
     day: "Zaterdag"
@@ -68,28 +68,28 @@
       - group: "1"
         trainer: ["Julie"]
         training: 
-          core: "4x (3' T1 + 2' T2 + 1' T3)"
+          core: "4x (3' <tt>T1</tt> + 2' <tt>T2</tt> + 1' <tt>T3</tt>)"
           break: "SP1'"
       - group: "2"
         trainer: ["Maurice"]
         training: 
-          core: "5x (3' T1 + 2' T2 + 1' T3)"
+          core: "5x (3' <tt>T1</tt> + 2' <tt>T2</tt> + 1' <tt>T3</tt>)"
           break: "SP1'"
       - group: "3"
         trainer: ["Carina"]
         training: 
-          core: "5x (3' T1 + 2' T2 + 1' T3)"
+          core: "5x (3' <tt>T1</tt> + 2' <tt>T2</tt> + 1' <tt>T3</tt>)"
           break: "SP1'"
       - group: "4"
         trainer: ["Odilia"]
         training: 
-          core: "5x (3' T1 + 2' T2 + 1' T3)"
+          core: "5x (3' <tt>T1</tt> + 2' <tt>T2</tt> + 1' <tt>T3</tt>)"
           break: "SP1'"
       - group: "5"
         warmup: true
         trainer: ["Bram"]
         training: 
-          core: "5x (3' T1 + 2' T2 + 1' T3)"
+          core: "5x (3' <tt>T1</tt> + 2' <tt>T2</tt> + 1' <tt>T3</tt>)"
           break: "SP1'"
   - date: "2026-06-25"
     day: "Donderdag"
@@ -99,25 +99,25 @@
       - group: "1"
         trainer: ["Liane"]
         training: 
-          core: "7x (1' T1 + 1' T2 + 1' T3)"
+          core: "7x (1' <tt>T1</tt> + 1' <tt>T2</tt> + 1' <tt>T3</tt>)"
           break: "SP2' dribbelen"
       - group: "2 + 3"
         trainer: ["Ingrid"]
         training: 
-          core: "8x (1' T1 + 1' T2 + 1' T3)"
+          core: "8x (1' <tt>T1</tt> + 1' <tt>T2</tt> + 1' <tt>T3</tt>)"
           break: "SP2' dribbelen"
       - group: "4 + 5"
         warmup: true
         trainer: ["Odilia"]
         training: 
-          core: "9x (1' T1 + 1' T2 + 1' T3)"
+          core: "9x (1' <tt>T1</tt> + 1' <tt>T2</tt> + 1' <tt>T3</tt>)"
           break: "SP2' dribbelen"
       - group: "baan"
         trainer: ["Wilbert", "Niels"]
         training:
           core: |
-            3x (800 T2 + 600 T2 + 400 T3) <br>
-            + "toetje" 4x (100 T1 + 100 T4)
+            3x (800 <tt>T2</tt> + 600 <tt>T2</tt> + 400 <tt>T3</tt>) <br>
+            + "toetje" 4x (100 <tt>T1</tt> + 100 <tt>T4</tt>)
           break: |
             P2' <br> (toetje geen rust)
   - date: "2026-06-27"

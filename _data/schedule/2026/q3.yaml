@@ -8,25 +8,35 @@
     - group: "1"
       trainer: ["Julie"]
       training: 
-        core: "40' fartlek"
+        core: "40' fartlek <tt>variabel</tt>"
     - group: "2 + 3"
       trainer: ["Peter"]
+      warmup: true
       training: 
-        core: "45' fartlek"
+        core: "45' fartlek <tt>variabel</tt>"
     - group: "4 + 5"
       trainer: ["Sander"]
       training: 
-        core: "45' fartlek"
+        core: "45' fartlek <tt>variabel</tt>"
 - date: "2026-07-02"
   day: "Donderdag"
   trainings:
     - group: "basis"
       warmup: true
       trainer: ["Bram"]
+      training:
+        core: "5x 7' <tt>T1-2</tt>"
+        break: "P90\""
     - group: "weg"
       trainer: ["Raymond"]
+      training:
+        core: "6x 7' <tt>T1-2</tt>"
+        break: "P90\""
     - group: "baan"
       trainer: ["Wilbert", "Niels"]
+      training:
+        core: "4x 1000 <tt>[10K]</tt>"
+        break: "P2'"
 - date: "2026-07-04"
   day: "Zaterdag"
   trainings:
@@ -39,21 +49,48 @@
   trainings:
     - group: "1"
       trainer: ["Corrine"]
+      training:
+        core: |
+          8' + 7' + 6' + 5' + 4' + 3' + 2' + 1' <br>
+          <tt>tempo bij elk interval iets omhoog (T1 → T4)</tt>
+        break: "P1'"
     - group: "2"
       warmup: true
       trainer: ["Maurice"]
+      training:
+        core: |
+          8' + 7' + 6' + 5' + 4' + 3' + 2' + 1' <br>
+          <tt>tempo bij elk interval iets omhoog (T1 → T4)</tt>
+        break: "P1'"
     - group: "3"
       trainer: ["Carina"]
+      training:
+        core: |
+          8' + 7' + 6' + 5' + 4' + 3' + 2' + 1' <br>
+          <tt>tempo bij elk interval iets omhoog (T1 → T4)</tt>
+        break: "P1'"
     - group: "4"
       trainer: ["Odilia"]
+      training:
+        core: |
+          8' + 7' + 6' + 5' + 4' + 3' + 2' + 1' <br>
+          <tt>100% HM → 100% 5K</tt>
+        break: "P1'"
     - group: "5"
       trainer: ["Norbert"]
+      training:
+        core: |
+          8' + 7' + 6' + 5' + 4' + 3' + 2' + 1' <br>
+          <tt>100% HM → 100% 5K</tt>
+        break: "P1'"
 - date: "2026-07-09"
   day: "Donderdag"
   trainings:
     - group: "basis"
       warmup: true
       trainer: ["Ingrid"]
+      training:
+        core: "6' + 11' + 16' <tt>T1-2</tt>"
     - group: "weg"
       trainer: ["Henry"]
     - group: "baan"
