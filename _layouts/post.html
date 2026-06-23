@@ -10,7 +10,7 @@
     <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/assets/icons/av40.png">
   </head>
   <body>
-    <h1>AV'40 Wegatletiekschema • {{ page.quarter }}</h1>
+    <h1>AV'40 Wegatletiekschema • {{ page.date | date: "%Y" }} {{ page.title }}</h1>
     {% include legend.html %}
     {% include navigation.html %}
     <div class="content">

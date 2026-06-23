@@ -1,6 +1,8 @@
 title: AV'40 Wegatletiekschema
 baseurl: "/av40-schedule"
 
+permalink: /:year/:title:output_ext
+
 plugins:
   - jekyll-relative-links
   - jekyll-redirect-from
