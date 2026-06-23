@@ -1,0 +1,12 @@
+@media (max-width: 1080px)  {
+
+    body {
+        width: 90%;
+    }
+
+    .training-grid {
+        grid-template-columns: 1fr;
+        margin: 1em 0;
+    }
+
+}

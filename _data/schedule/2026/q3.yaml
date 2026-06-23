@@ -1,0 +1,67 @@
+- date: "2026-06-30"
+  day: "Dinsdag"
+  trainings:
+    - group: "uit"
+      trainer: ["Corrine", "Maurice"]
+      training: 
+        core: "uittraining"
+    - group: "1"
+      trainer: ["Julie"]
+      training: 
+        core: "40' fartlek"
+    - group: "2 + 3"
+      trainer: ["Peter"]
+      training: 
+        core: "45' fartlek"
+    - group: "4 + 5"
+      trainer: ["Sander"]
+      training: 
+        core: "45' fartlek"
+- date: "2026-07-02"
+  day: "Donderdag"
+  trainings:
+    - group: "basis"
+      warmup: true
+      trainer: ["Bram"]
+    - group: "weg"
+      trainer: ["Raymond"]
+    - group: "baan"
+      trainer: ["Wilbert", "Niels"]
+- date: "2026-07-04"
+  day: "Zaterdag"
+  trainings:
+    - group: "hardlopen"
+      trainer: ["Lies"]
+    - group: "wandelen"
+      trainer: ["Astrid"]
+- date: "2026-07-07"
+  day: "Dinsdag"
+  trainings:
+    - group: "1"
+      trainer: ["Corrine"]
+    - group: "2"
+      warmup: true
+      trainer: ["Maurice"]
+    - group: "3"
+      trainer: ["Carina"]
+    - group: "4"
+      trainer: ["Odilia"]
+    - group: "5"
+      trainer: ["Norbert"]
+- date: "2026-07-09"
+  day: "Donderdag"
+  trainings:
+    - group: "basis"
+      warmup: true
+      trainer: ["Ingrid"]
+    - group: "weg"
+      trainer: ["Henry"]
+    - group: "baan"
+      trainer: ["Klaas", "Wilbert"]
+- date: "2026-07-11"
+  day: "Zaterdag"
+  trainings:
+    - group: "hardlopen"
+      trainer: ["Lies"]
+    - group: "wandelen"
+      trainer: ["Henry"]

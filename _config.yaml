@@ -1,0 +1,22 @@
+title: AV'40 Wegatletiekschema
+baseurl: "/"
+url: "https://av40.sarajuhosova.com"
+
+plugins:
+  - jekyll-relative-links
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

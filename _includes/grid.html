@@ -1,0 +1,50 @@
+<div class="training-grid">
+    {% for day in include.schedule %}
+
+    {% capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture %}
+    {% capture trainingtime %}{{ day.date | date: '%s' }}{% endcapture %}
+
+    {% assign type = "upcoming" %}
+    {% if trainingtime < nowunix %}
+        {% assign type = "past" %}
+    {% endif %}
+    {% capture today %}{{ 'now' | date: "%Y-%m-%d" }}{% endcapture %}
+    {% if day.date == today %}
+        {% assign type = "upcoming" %}
+    {% endif %}
+    {% if day.cancelled %}
+        {% assign type = "cancelled" %}
+    {% endif %}
+
+    <div class="training {{ type }}">
+        <div class="training-header">
+            <h4>{{ day.day }}</h4>
+            <h3>{{ day.date | date: "%Y-%m-%d" }}</h3>
+            <p>
+                {% if day.description %}
+                    {{ day.description }}
+                {% else %}
+                    &nbsp;
+                {% endif %}
+            </p>
+        </div>
+        <table>
+            {% for training in day.trainings %}
+            <tr>
+                <td class="group">{{ training.group }}</td>
+                <td class="warmup">
+                    {% if training.warmup %}
+                        <span>WU</span>
+                    {% endif %}
+                </td>
+                <td class="trainer">{{ training.trainer | join: "<br>" }}</td>
+                <td class="training">{{ training.training.core }}</td>
+                <td class="break">{{ training.training.break }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    {% endfor %}
+
+</div>
