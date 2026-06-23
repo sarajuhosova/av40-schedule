@@ -1,12 +1,32 @@
+@media (max-width: 1260px)  {
+
+    .trainers {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
 @media (max-width: 1080px)  {
 
     body {
         width: 90%;
     }
 
-    .grid {
+    .schedule {
         grid-template-columns: 1fr;
         margin: 1em 0;
+    }
+
+    .trainers {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 680px)  {
+
+    .trainers {
+        grid-template-columns: 1fr;
     }
 
 }

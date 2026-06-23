@@ -26,8 +26,7 @@
                                 <tr class="{{ type }}">
                                     <td class="right">{{ day.day }}</td>
                                     <td class="italic">{{ day.date | date: "%Y-%m-%d" }}</td>
-                                    <td class="bold right">{{ training.group }}</td>
-                                    <td>{{ training.training.core }}</td>
+                                    <td class="bold">{{ training.group }}</td>
                                 </tr>
                                 {% assign counter = counter | plus: 1 %}
                             {% endif %}
