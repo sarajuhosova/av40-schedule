@@ -23,7 +23,7 @@
 - date: "2026-10-10"
   day: "Zaterdag"
   trainings:
-    - group: "hardlopen"
+    - group: "duurloop"
       trainer: ["??"]
     - group: "wandelen"
       trainer: ["??"]
