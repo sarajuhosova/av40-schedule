@@ -3,13 +3,14 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:http://sarajuhosova.com/av40-schedule/calendars/{{ include.trainer.id }}.ics
 
-X-WR-CALNAME:{{ include.trainer.name }}'s Trainerskalender
+X-WR-CALNAME:AV'40 Trainers
 CALSCALE:GREGORIAN
+METHOD:REQUEST
 
 BEGIN:VTIMEZONE
-TZID:Europe/Berlin
-TZURL:http://tzurl.org/zoneinfo-outlook/Europe/Berlin
-X-LIC-LOCATION:Europe/Berlin
+TZID:Europe/Amsterdam
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/Amsterdam
+X-LIC-LOCATION:Europe/Amsterdam
 BEGIN:DAYLIGHT
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
@@ -43,9 +44,10 @@ END:VTIMEZONE
 {% endif %}
 {% assign date = day.date | date: "%Y%m%d" %}
 BEGIN:VEVENT
+ORGANIZER;CN="AV'40 Wegatletiek":MAILTO:noreply@sarajuhosova.com
 UID:trainer-{{ include.trainer.id }}-{{ date }}@av40.nl
-DTSTART;TZID=Europe/Berlin:{{ date }}T{{ start }}00
-DTEND;TZID=Europe/Berlin:{{ date }}T{{ end }}00
+DTSTART;TZID=Europe/Amsterdam:{{ date }}T{{ start }}00
+DTEND;TZID=Europe/Amsterdam:{{ date }}T{{ end }}00
 SUMMARY:AV'40 Trainer [{{ training.group }}]
 END:VEVENT
 {% endif %}
