@@ -10,10 +10,8 @@
         <div class="grid-item" id="{{ trainer.id }}">
             <div class="grid-header">
                 <h4>{{ trainer.name }}</h4>
-                {% if trainer.calendar %}
-                    {% capture cal_url %}{{ site.url }}/{{ site.baseurl }}/calendars/{{ trainer.id }}.ics{% endcapture %}
-                    <button class="calendar" id="{{ trainer.id }}-calendar" onclick="copyLink('{{ cal_url }}')"><img src="{{ site.baseurl }}/assets/icons/date.png" style="height: 1em; aspect-ratio: auto;"></button>
-                {% endif %}
+                {% capture cal_url %}{{ site.url }}/{{ site.baseurl }}/calendars/{{ trainer.id }}.ics{% endcapture %}
+                <button class="calendar" id="{{ trainer.id }}-calendar" onclick="copyLink('{{ cal_url }}')"><img src="{{ site.baseurl }}/assets/icons/date.png" style="height: 1em; aspect-ratio: auto;"></button>
             </div>
             <table>
                 {% assign counter = 0 %}
@@ -35,7 +33,6 @@
 
                         {% for training in day.trainings %}
                             {% if training.trainer contains trainer.name %}
-
                                 <tr class="{{ type }}">
                                     <td class="right">{{ day.day }}</td>
                                     <td class="italic">{{ day.date | date: "%d %b %Y" }}</td>
