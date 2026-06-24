@@ -35,6 +35,7 @@
   name: "Maurice"
 - id: "niels"
   name: "Niels"
+  calendar: true
 - id: "norbert"
   name: "Norbert"
 - id: "odilia"
