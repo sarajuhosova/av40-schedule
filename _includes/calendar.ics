@@ -5,7 +5,6 @@ PRODID:"-//AV'40 Wegatletiek//Trainerkalender #{{ include.trainer.id }}//NL"
 
 X-WR-CALNAME:"AV'40 Trainers"
 CALSCALE:GREGORIAN
-METHOD:REQUEST
 
 BEGIN:VTIMEZONE
 TZID:Europe/Amsterdam
@@ -45,7 +44,7 @@ END:VTIMEZONE
 {% assign date = day.date | date: "%Y%m%d" %}
 BEGIN:VEVENT
 ORGANIZER;CN="AV'40 Wegatletiek":MAILTO:noreply@sarajuhosova.com
-UID:trainer-{{ include.trainer.id }}-{{ date }}@av40.nl
+UID:trainer{{ date }}{{ include.trainer.id }}@sarajuhosova.com
 DTSTART;TZID=Europe/Amsterdam:{{ date }}T{{ start }}00
 DTEND;TZID=Europe/Amsterdam:{{ date }}T{{ end }}00
 SUMMARY:AV'40 Trainer [{{ training.group }}]
