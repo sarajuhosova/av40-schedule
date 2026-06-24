@@ -3,7 +3,7 @@ layout: none
 ---
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:http://sarajuhosova.com/av40-schedule/sara
+PRODID:http://sarajuhosova.com/av40-schedule/calendars/sara.ics
 X-WR-CALNAME:pl
 CALSCALE:GREGORIAN
 BEGIN:VTIMEZONE
@@ -44,3 +44,5 @@ END:VTIMEZONE
             {% endif %}
         {% endfor %}
 {% endfor %}
+
+END:VCALENDAR

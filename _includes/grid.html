@@ -19,7 +19,7 @@
         <div class="grid-item {{ type }}">
             <div class="grid-header">
                 <h4>{{ day.day }}</h4>
-                <h3>{{ day.date | date: "%Y-%m-%d" }}</h3>
+                <h3>{{ day.date | date: "%d %b %Y" }}</h3>
                 <p>
                     {% if day.description %}
                         {{ day.description }}
