@@ -156,6 +156,10 @@ h1, h2 {
 .past      tr { border-top-color: $gray;   border-bottom-color: $gray; }
 .cancelled tr { border-top-color: $orange; border-bottom-color: $orange; }
 
+.cancelled td {
+    text-decoration: line-through;
+}
+
 .grid-item .warmup {
     padding: 0.5em 0 0.5em 0;
     text-align: center;

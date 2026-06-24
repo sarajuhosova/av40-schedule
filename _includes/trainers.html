@@ -1,11 +1,13 @@
 <div class="grid trainers">
-    {% assign trainings = site.data.schedule.2026.q3 %}
+    {% assign previous = site.data.schedule.2026.q2 %}
+    {% assign next = site.data.schedule.2026.q3 %}
+    {% assign trainings = previous | concat: next %}
 
     {% capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture %}
     {% capture today %}{{ 'now' | date: "%Y-%m-%d" }}{% endcapture %}
 
     {% for trainer in site.data.trainers %}
-        <div class="grid-item">
+        <div class="grid-item" id="{{ trainer.id }}">
             <div class="grid-header">
                 <h4>{{ trainer.name }}</h4>
                 {% if trainer.calendar %}
@@ -15,7 +17,14 @@
             </div>
             <table>
                 {% assign counter = 0 %}
+                {% assign index = -1 %}
+                {% assign training_url = site.baseurl | append: "/2026/q2" %}
                 {% for day in trainings %}
+                    {% assign index = index | plus: 1 %}
+                    {% if index >= previous.size %}
+                        {% assign training_url = site.baseurl | append: "/2026/q3" %}
+                    {% endif %}
+
                     {% capture trainingtime %}{{ day.date | date: '%s' }}{% endcapture %}
                     {% if trainingtime > nowunix or day.date == today %}
 
@@ -31,6 +40,7 @@
                                     <td class="right">{{ day.day }}</td>
                                     <td class="italic">{{ day.date | date: "%d %b %Y" }}</td>
                                     <td class="bold">{{ training.group }}</td>
+                                    <td><a href="{{ training_url }}#{{ day.date | date: '%Y%m%d' }}"><img src="{{ site.baseurl }}/assets/icons/visit.svg" style="height: 1em; aspect-ratio: auto;"></a></td>
                                 </tr>
                                 {% assign counter = counter | plus: 1 %}
                             {% endif %}

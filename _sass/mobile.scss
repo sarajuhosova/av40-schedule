@@ -1,7 +1,19 @@
-@media (max-width: 1260px)  {
+@media (max-width: 1520px)  {
 
     .trainers {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .navigation {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 1260px)  {
+
+    .trainers {
+        grid-template-columns: 1fr 1fr;
     }
 
     .navigation {
@@ -23,16 +35,12 @@
     }
 
     .trainers {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
 }
 
 @media (max-width: 680px)  {
-
-    .trainers {
-        grid-template-columns: 1fr;
-    }
 
     .navigation {
         grid-template-columns: 1fr;

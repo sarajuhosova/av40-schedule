@@ -16,7 +16,7 @@
             {% assign type = "cancelled" %}
         {% endif %}
 
-        <div class="grid-item {{ type }}">
+        <div class="grid-item {{ type }}" id="{{ day.date | date: "%Y%m%d" }}">
             <div class="grid-header">
                 <h4>{{ day.day }}</h4>
                 <h3>{{ day.date | date: "%d %b %Y" }}</h3>
