@@ -1,11 +1,15 @@
 ---
 layout: none
 ---
+
 BEGIN:VCALENDAR
+
 VERSION:2.0
 PRODID:http://sarajuhosova.com/av40-schedule/calendars/sara.ics
-X-WR-CALNAME:pl
+
+X-WR-CALNAME:Sára's Trainerskalender
 CALSCALE:GREGORIAN
+
 BEGIN:VTIMEZONE
 TZID:Europe/Amsterdam
 TZURL:http://tzurl.org/zoneinfo-outlook/Europe/Amsterdam
@@ -26,23 +30,28 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 
-{% assign trainings = site.data.schedule.2026.q3 %}
-{% for day in trainings %}
-        {% if day.cancelled %}
-            {% continue %}
-        {% endif %}
-
-        {% for training in day.trainings %}
-            {% if training.trainer contains "Sára" %}
-                BEGIN:VEVENT
-                LOCATION:AV'40
-                SUMMARY:Training ({{ training.group }})
-                CLASS:PUBLIC
-                DTSTART;TZID=Europe/Amsterdam:{{ training.date | date: "%Y%m%d" }}T191500
-                DTEND;TZID=Europe/Amsterdam:{{ training.date | date: "%Y%m%d" }}T204500
-                END:VEVENT
-            {% endif %}
-        {% endfor %}
+{% assign schedule = site.data.schedule.2026.q3 %}
+{% for day in schedule %}
+{% if day.cancelled %}
+    {% continue %}
+{% endif %}
+{% for training in day.trainings %}
+{% if training.trainer contains "Sára" %}
+{% assign start = "1915" %}
+{% assign end = "2045" %}
+{% if day.day == "Zaterdag" %}
+{% assign start = "0900" %}
+{% assign end = "1030" %}
+{% endif %}
+{% assign date = day.date | date: "%Y%m%d" %}
+BEGIN:VEVENT
+UID:trainer-sara-{{ date }}@av40.nl
+DTSTART;TZID=Europe/Amsterdam:{{ date }}T{{ start }}00
+DTEND;TZID=Europe/Amsterdam:{{ date }}T{{ end }}00
+SUMMARY:AV'40 Trainer [{{ training.group }}]
+END:VEVENT
+{% endif %}
+{% endfor %}
 {% endfor %}
 
 END:VCALENDAR
