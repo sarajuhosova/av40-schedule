@@ -1,9 +1,9 @@
 BEGIN:VCALENDAR
 
 VERSION:2.0
-PRODID:http://sarajuhosova.com/av40-schedule/calendars/{{ include.trainer.id }}.ics
+PRODID:"-//AV'40 Wegatletiek//Trainerkalender #{{ include.trainer.id }}//NL"
 
-X-WR-CALNAME:AV'40 Trainers
+X-WR-CALNAME:"AV'40 Trainers"
 CALSCALE:GREGORIAN
 METHOD:REQUEST
 
