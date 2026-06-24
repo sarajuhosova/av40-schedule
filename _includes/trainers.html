@@ -8,6 +8,10 @@
         <div class="grid-item">
             <div class="grid-header">
                 <h4>{{ trainer.name }}</h4>
+                {% if trainer.calendar %}
+                    {% capture cal_url %}{{ site.url }}/calendars/{{ trainer.id }}.ics{% endcapture %}
+                    <button class="calendar" id="{{ trainer.id }}-calendar" onclick="copyLink('{{ cal_url }}')"><img src="{{ site.baseurl }}/assets/icons/date.png" style="height: 1em; aspect-ratio: auto;"></button>
+                {% endif %}
             </div>
             <table>
                 {% assign counter = 0 %}

@@ -30,6 +30,7 @@
   name: "Lizeth"
 - id: "martijn"
   name: "Martijn"
+  calendar: true
 - id: "maurice"
   name: "Maurice"
 - id: "niels"
@@ -38,6 +39,7 @@
   name: "Norbert"
 - id: "odilia"
   name: "Odilia"
+  calendar: true
 - id: "paula"
   name: "Paula"
 - id: "peter"
@@ -54,6 +56,7 @@
   name: "Sander"
 - id: "sara"
   name: "Sára"
+  calendar: true
 - id: "tanno"
   name: "Tanno"
 - id: "wilbert"

@@ -57,6 +57,59 @@ h1, h2 {
 }
 
 // --------------------------------------------//
+// GRID -------------------------------------- //
+// --------------------------------------------//
+
+.grid {
+    margin: 1em;
+    display: grid;
+    gap: 1em;
+}
+
+.grid-item {
+    border-radius: $border-radius;
+}
+
+.grid-header {
+    color: #fff;
+    padding: 1em 1em 0.5em 1em;
+    border-radius: $border-radius $border-radius 0 0;
+    background-color: $blue;
+}
+
+.grid-header h3,
+.grid-header h4,
+.grid-header p {
+    margin: 0;
+}
+
+.grid-item table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: $border-radius;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $blue;
+}
+
+.grid-item tr {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding: 0 2em 0 2em;
+    border-top-color: $blue;   border-bottom-color: $blue;
+}
+
+.grid-item td {
+    padding: 0.5em;
+}
+
+.grid-item .right  { text-align: right; }
+.grid-item .bold   { font-weight: bold; }
+.grid-item .italic { font-style: italic; }
+
+// --------------------------------------------//
 // LEGEND ------------------------------------ //
 // --------------------------------------------//
 
@@ -84,83 +137,30 @@ h1, h2 {
 .legend .cancelled { background-color: $orange; border-color: $orange; }
 
 // --------------------------------------------//
-// GRID -------------------------------------- //
+// TRAININGS --------------------------------- //
 // --------------------------------------------//
-
-.grid {
-    margin: 1em;
-    display: grid;
-    gap: 1em;
-}
 
 .schedule {
     grid-template-columns: 5fr 5fr 2fr;
-}
-
-.trainers {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.grid-item {
-    border-radius: $border-radius;
-}
-
-.grid-header {
-    color: #fff;
-    padding: 1em 1em 0.5em 1em;
-    border-radius: $border-radius $border-radius 0 0;
-    background-color: $blue;
 }
 
 .upcoming  .grid-header { background-color: $blue; }
 .past      .grid-header { background-color: $gray; }
 .cancelled .grid-header { background-color: $orange; }
 
-.grid-header h3,
-.grid-header h4,
-.grid-header p {
-    margin: 0;
-}
-
-.grid-item table {
-    width: 100%;
-    border-collapse: collapse;
-    border-radius: $border-radius;
-    border-width: 1px;
-    border-style: solid;
-    border-color: $blue;
-}
-
 .upcoming  table { border-color: $blue; }
 .past      table { border-color: $gray; }
 .cancelled table { border-color: $orange; }
 
-.grid-item tr {
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    padding: 0 2em 0 2em;
-    border-top-color: $blue;   border-bottom-color: $blue;
-}
-
 .upcoming  tr { border-top-color: $blue;   border-bottom-color: $blue; }
 .past      tr { border-top-color: $gray;   border-bottom-color: $gray; }
 .cancelled tr { border-top-color: $orange; border-bottom-color: $orange; }
-
-.grid-item td {
-    padding: 0.5em;
-}
 
 .grid-item .warmup {
     padding: 0.5em 0 0.5em 0;
     text-align: center;
     font-family: monospace;
 }
-
-.grid-item .right  { text-align: right; }
-.grid-item .bold   { font-weight: bold; }
-.grid-item .italic { font-style: italic; }
 
 tr.empty {
     color: $gray;
@@ -188,6 +188,22 @@ tr.cancelled {
 
     background-color: $blue;
     border-color: $blue;
+}
+
+.trainers {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.trainers .grid-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trainers button.calendar {
+    background-color: white;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
 }
 
 // --------------------------------------------//
