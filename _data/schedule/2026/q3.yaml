@@ -1,5 +1,6 @@
 - date: "2026-06-30"
   day: "Dinsdag"
+  description: "uittraining / fartlek"
   trainings:
     - group: "uit"
       trainer: ["Corrine", "Maurice"]
@@ -21,13 +22,13 @@
 - date: "2026-07-02"
   day: "Donderdag"
   trainings:
-    - group: "basis"
+    - group: "weg basis"
       warmup: true
       trainer: ["Bram"]
       training:
         core: "5x 7' <tt>T1-2</tt>"
         break: "P90\""
-    - group: "weg"
+    - group: "weg plus"
       trainer: ["Raymond"]
       training:
         core: "6x 7' <tt>T1-2</tt>"
@@ -46,6 +47,7 @@
       trainer: ["Astrid"]
 - date: "2026-07-07"
   day: "Dinsdag"
+  description: "crescendo"
   trainings:
     - group: "1"
       trainer: ["Corrine"]
@@ -86,13 +88,13 @@
 - date: "2026-07-09"
   day: "Donderdag"
   trainings:
-    - group: "basis"
+    - group: "weg basis"
       warmup: true
       trainer: ["Ingrid"]
       training:
         core: "6' + 11' + 16' <tt>T1-2</tt>"
         break: "P2'"
-    - group: "weg"
+    - group: "weg plus"
       trainer: ["Henry"]
       training:
         core: "7' + 12' + 17' <tt>T1-2</tt>"
@@ -111,11 +113,12 @@
       trainer: ["Henry"]
 - date: "2026-07-14"
   day: "Dinsdag"
+  description: "oneven piramide"
   trainings:
     - group: "1"
       trainer: ["Jan"]
       training:
-        core: "1' + 3' + 5' + 7' + 5' + 3' + 1' <tt>T2</tt>"
+        core: "1' + 3' + 5' + 7' + 5' + 5' + 3' + 1' <tt>T2</tt>"
         break: "P1'"
     - group: "2"
       warmup: true
@@ -141,13 +144,13 @@
 - date: "2026-07-16"
   day: "Donderdag"
   trainings:
-    - group: "basis"
+    - group: "weg basis"
       warmup: true
       trainer: ["Liane"]
       training:
         core: "20' + 15' <tt>T1-2</tt>"
         break: "P2'"
-    - group: "weg"
+    - group: "weg plus"
       trainer: ["Maurice"]
       training:
         core: "24' + 19' <tt>T1-2</tt>"
@@ -166,6 +169,7 @@
       trainer: ["Astrid"]
 - date: "2026-07-21"
   day: "Dinsdag"
+  description: "steady"
   trainings:
     - group: "1"
       trainer: ["Corrine"]
@@ -196,13 +200,13 @@
 - date: "2026-07-23"
   day: "Donderdag"
   trainings:
-    - group: "basis"
+    - group: "weg basis"
       warmup: true
       trainer: ["Henry"]
       training:
         core: "2x 18' <tt>T1-2</tt>"
         break: "P2'"
-    - group: "weg"
+    - group: "weg plus"
       trainer: ["Bram"]
       training:
         core: "2x 22' <tt>T1-2</tt>"
@@ -221,6 +225,7 @@
       trainer: ["Quirine"]
 - date: "2026-07-28"
   day: "Dinsdag"
+  description: "uittraining / fartlek"
   trainings:
     - group: "uit"
       trainer: ["Corrine", "Maurice"]
@@ -242,13 +247,13 @@
 - date: "2026-07-30"
   day: "Donderdag"
   trainings:
-    - group: "basis"
+    - group: "weg basis"
       warmup: true
       trainer: ["Ingrid"]
       training:
         core: "5x 7' <tt>T1-2</tt>"
         break: "P90\""
-    - group: "weg"
+    - group: "weg plus"
       trainer: ["Raymond"]
       training:
         core: "6x 7' <tt>T1-2</tt>"
@@ -298,12 +303,12 @@
 - date: "2026-08-06"
   day: "Donderdag"
   trainings:
-    - group: "basis"
+    - group: "weg basis"
       trainer: ["Henry"]
       training:
-        core: "3x 10' <tt>T1-2</tt>"
+        core: "3x 12' <tt>T1-2</tt>"
         break: "P2'"
-    - group: "weg"
+    - group: "weg plus"
       trainer: ["Peter"]
       warmup: true
       training:
@@ -354,9 +359,9 @@
 - date: "2026-08-13"
   day: "Donderdag"
   trainings:
-    - group: "basis"
+    - group: "weg basis"
       trainer: ["Julie"]
-    - group: "weg"
+    - group: "weg plus"
       trainer: ["Henry"]
       warmup: true
     - group: "baan"
@@ -373,6 +378,7 @@
       trainer: ["Henry"]
 - date: "2026-08-18"
   day: "Dinsdag"
+  description: "kort en krachtig"
   trainings:
     - group: "1"
       trainer: ["Jan"]
@@ -403,13 +409,22 @@
 - date: "2026-08-20"
   day: "Donderdag"
   trainings:
-    - group: "basis"
+    - group: "weg basis"
       trainer: ["Bram"]
       warmup: true
-    - group: "weg"
+      training:
+        core: "6' + 12' + 18' <tt>T1-2</tt>"
+        break: "P90\""
+    - group: "weg plus"
       trainer: ["Maurice"]
+      training:
+        core: "7' + 14' + 21' <tt>T1-2</tt>"
+        break: "P90\""
     - group: "baan"
       trainer: ["Martijn", "Odilia"]
+      training:
+        core: "9x (400 <tt>85% 5K</tt> + 200 <tt>100% 5K</tt>)"
+        break: "SP2'"
 - date: "2026-08-22"
   day: "Zaterdag"
   trainings:
@@ -419,6 +434,7 @@
       trainer: ["Astrid"]
 - date: "2026-08-25"
   day: "Dinsdag"
+  description: "uittraining / fartlek"
   trainings:
     - group: "uit"
       trainer: ["Maurice"]
@@ -440,13 +456,22 @@
 - date: "2026-08-27"
   day: "Donderdag"
   trainings:
-    - group: "basis"
+    - group: "weg basis"
       trainer: ["Ingrid"]
       warmup: true
-    - group: "weg"
+      training:
+        core: "4x 10' <tt>T1-2</tt>"
+        break: "P90\""
+    - group: "weg plus"
       trainer: ["Henry"]
+      training:
+        core: "5x 9' <tt>T1-2</tt>"
+        break: "P90\""
     - group: "baan"
       trainer: ["Sára", "Martijn"]
+      training:
+        core: "12x 400 <tt>@ 90% 5K</tt>"
+        break: "P90\""
 - date: "2026-08-29"
   day: "Zaterdag"
   trainings:
@@ -456,28 +481,53 @@
       trainer: ["Quirine"]
 - date: "2026-09-01"
   day: "Dinsdag"
+  description: "omgekeerde piramide"
   trainings:
     - group: "1"
       trainer: ["Julie"]
+      training:
+        core: "5' + 4' + 3' + 2' + 1' + 2' + 3' + 4' + 5' + 5' <tt>T2</tt>"
+        break: "P1'"
     - group: "2"
       trainer: ["Jan"]
+      training:
+        core: "5' + 4' + 3' + 2' + 1' + 2' + 3' + 4' + 5' + 6' <tt>T2</tt>"
+        break: "P1'"
     - group: "3"
       trainer: ["Sára"]
       warmup: true
+      training:
+        core: "5' + 5' + 4' + 3' + 2' + 1' + 2' + 3' + 4' + 5' + 5' <tt>T2</tt>"
+        break: "P1'"
     - group: "4"
       trainer: ["Niels"]
+      training:
+        core: "6' + 5' + 4' + 3' + 2' + 1' + 2' + 3' + 4' + 5' + 6' <tt>85% 10K</tt>"
+        break: "P1'"
     - group: "5"
       trainer: ["Wilbert"]
+      training:
+        core: "6' + 5' + 4' + 3' + 2' + 1' + 2' + 3' + 4' + 5' + 6' <tt>85% 10K</tt>"
+        break: "P1'"
 - date: "2026-09-03"
   day: "Donderdag"
   trainings:
-    - group: "basis"
+    - group: "weg basis"
       trainer: ["Henry"]
-    - group: "weg"
+      training:
+        core: "2x 19' <tt>T1-2</tt>"
+        break: "P2'"
+    - group: "weg plus"
       trainer: ["Raymond"]
+      training:
+        core: "2x 22' <tt>T1-2</tt>"
+        break: "P2'"
       warmup: true
     - group: "baan"
       trainer: ["Martijn", "Klaas"]
+      training:
+        core: "200 + 400 + 600 + 800 + 1200 + 800 + 600 + 400 + 200 <tt>90% 10K</tt>"
+        break: "P2'"
 - date: "2026-09-05"
   day: "Zaterdag"
   trainings:
@@ -487,28 +537,53 @@
       trainer: ["Henry"]
 - date: "2026-09-08"
   day: "Dinsdag"
+  description: "zaagtand"
   trainings:
     - group: "1"
       trainer: ["Jan"]
+      training:
+        core: "6x series van 4' (na elke minuut tempo omhoog) <tt>T1 → T3</tt>"
+        break: "SP90\""
     - group: "2"
       trainer: ["Raymond"]
+      training:
+        core: "7x series van 4' (na elke minuut tempo omhoog) <tt>T1 → T4</tt>"
+        break: "SP90\""
     - group: "3"
       trainer: ["Odilia"]
       warmup: true
+      training:
+        core: "8x series van 4' (na elke minuut tempo omhoog) <tt>T1 → T4</tt>"
+        break: "SP90\""
     - group: "4"
       trainer: ["Sára"]
+      training:
+        core: "9x series van 4' (na elke minuut tempo omhoog) <tt>85% → 105% 10K</tt>"
+        break: "SP90\""
     - group: "5"
       trainer: ["Wilbert"]
+      training:
+        core: "9x series van 4' (na elke minuut tempo omhoog) <tt>85% → 105% 10K</tt>"
+        break: "SP90\""
 - date: "2026-09-10"
   day: "Donderdag"
   trainings:
-    - group: "basis"
+    - group: "weg basis"
       trainer: ["Bram"]
-    - group: "weg"
+      training:
+        core: "20' + 15' <tt>T1-2</tt>"
+        break: "P2'"
+    - group: "weg plus"
       trainer: ["Peter"]
+      training:
+        core: "24' + 19' <tt>T1-2</tt>"
+        break: "P2'"
       warmup: true
     - group: "baan"
       trainer: ["Martijn", "Klaas"]
+      training:
+        core: "400 <tt>95% 5K</tt> + 800 <tt>80% 5K</tt> + 2x (6x 200 <tt>105% 5K</tt>) + 800 <tt>80% 5K</tt> + 400 <tt>80% 5K</tt>"
+        break: "P1'; SP2'"
 - date: "2026-09-12"
   day: "Zaterdag"
   trainings:
@@ -518,28 +593,57 @@
       trainer: ["Quirine"]
 - date: "2026-09-15"
   day: "Dinsdag"
+  description: "sinusgolven"
   trainings:
     - group: "1"
       trainer: ["Julie"]
+      training:
+        core: "4x (1' + 2' + 3' + 2' + 1') <tt>T2-3</tt>"
+        break: "P1'; SP2'"
     - group: "2"
       trainer: ["Maurice"]
+      training:
+        core: "4x (1' + 2' + 3' + 3' + 2') <tt>T2-3</tt>"
+        break: "P1'; SP2'"
     - group: "3"
       trainer: ["Carina"]
       warmup: true
+      training:
+        core: "4x (1' + 2' + 3' + 3' + 2') <tt>T2-3</tt>"
+        break: "P1'; SP2'"
     - group: "4"
       trainer: ["Sára"]
+      training:
+        core: |
+          4x (1' + 2' + 3' + 3' + 2' + 1') <br>
+          <tt>1' @ 100% 10K / 2' @ 92% 10K / 3' @ 85% 10K</tt>
+        break: "P1'; SP2'"
     - group: "5"
       trainer: ["Niels"]
+      training:
+        core: |
+          4x (1' + 2' + 3' + 3' + 2' + 1') <br>
+          <tt>1' @ 100% 10K / 2' @ 92% 10K / 3' @ 85% 10K</tt>
+        break: "P1'; SP2'"
 - date: "2026-09-17"
   day: "Donderdag"
   trainings:
-    - group: "basis"
+    - group: "weg basis"
       trainer: ["Bram"]
-    - group: "weg"
+      training: 
+        core: "3x 12' <tt>T1-2</tt>"
+        break: "P90\""
+    - group: "weg plus"
       trainer: ["Maurice"]
       warmup: true
+      training: 
+        core: "4x 10' <tt>T1-2</tt>"
+        break: "P90\""
     - group: "baan"
       trainer: ["Wilbert", "Martijn"]
+      training:
+        core: "6x 1000 <tt>95% 10K</tt>"
+        break: "P90\""
 - date: "2026-09-19"
   day: "Zaterdag"
   trainings:
@@ -549,28 +653,54 @@
       trainer: ["Astrid"]
 - date: "2026-09-22"
   day: "Dinsdag"
+  description: "modulatieloop"
   trainings:
     - group: "1"
       trainer: ["Liane"]
+      training:
+        core: "4 x (5' <tt>T1</tt> + 5' <tt>T3</tt>)"
+        break: "SP2'"
     - group: "2"
       trainer: ["Raymond"]
+      training:
+        core: "4 x (5'30\" <tt>T1</tt> + 5'30\" <tt>T3</tt>)"
+        break: "SP2'"
     - group: "3"
       trainer: ["Carina"]
+      training:
+        core: "4 x (6' <tt>T1</tt> + 6' <tt>T3</tt>)"
+        break: "SP2'"
     - group: "4"
       trainer: ["Sára"]
+      training:
+        core: "5 x (5' <tt>82% 10K</tt> + 5' <tt>97% 10K</tt>)"
+        break: "SP2'"
     - group: "5"
       trainer: ["Niels"]
       warmup: true
+      training:
+        core: "5 x (5' <tt>82% 10K</tt> + 5' <tt>97% 10K</tt>)"
+        break: "SP2'"
 - date: "2026-09-24"
   day: "Donderdag"
+  description: "negative split"
   trainings:
-    - group: "basis"
+    - group: "weg basis"
       trainer: ["Ingrid"]
-    - group: "weg"
+      training:
+        core: "20' aan één stuk <tt>T1-2</tt>; <br> zelfde weg terug in minder dan 20'"
+        break: "P2'"
+    - group: "weg plus"
       trainer: ["Peter"]
       warmup: true
+      training:
+        core: "22' aan één stuk <tt>T1-2</tt>; <br> zelfde weg terug in minder dan 22'"
+        break: "P2'"
     - group: "baan"
       trainer: ["Martijn", "Klaas"]
+      training:
+        core: "5x (1000 + 400) <tt>95%-97% 10K</tt>"
+        break: "P90\"; SP2'"
 - date: "2026-09-26"
   day: "Zaterdag"
   trainings:
@@ -580,6 +710,7 @@
       trainer: ["Quirine"]
 - date: "2026-09-29"
   day: "Dinsdag"
+  description: "uittraining / fartlek"
   trainings:
     - group: "uit"
       trainer: ["Maurice"]
@@ -601,13 +732,25 @@
 - date: "2026-10-01"
   day: "Donderdag"
   trainings:
-    - group: "basis"
+    - group: "weg basis"
       trainer: ["Ingrid"]
       warmup: true
-    - group: "weg"
+      training:
+        core: "4x 10' <tt>T1-2</tt>"
+        break: "P2'"
+    - group: "weg plus"
       trainer: ["Klaas"]
+      training:
+        core: "5x 9' <tt>T1-2</tt>"
+        break: "P2'"
     - group: "baan"
       trainer: ["Wilbert", "Sára"]
+      training:
+        core: |
+          3x (800 <tt>85% 5K</tt> + 200 <tt>102% 5K</tt> + 400 <tt>95% 5K</tt>) <br>
+          + "toetje" 4x (100 <tt>80% 5K</tt> + 100 <tt>107% 5K</tt>)
+        break: |
+          P2' <br> (toetje geen rust)
 - date: "2026-10-03"
   day: "Zaterdag"
   trainings:
