@@ -361,9 +361,15 @@
   trainings:
     - group: "weg basis"
       trainer: ["Julie"]
+      training:
+        core: "2x 18' <tt>T1-2</tt>"
+        break: "P2'"
     - group: "weg plus"
       trainer: ["Henry"]
       warmup: true
+      training:
+        core: "2x 22' <tt>T1-2</tt>"
+        break: "P2'"
     - group: "baan"
       trainer: ["Martijn", "Niels"]
       training:
