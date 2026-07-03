@@ -5,8 +5,10 @@ function copyLink(link) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const now = new Date();
   const schedule = document.getElementsByClassName("schedule")[0];
+  if (!schedule) return;
+
+  const now = new Date();
   let next = false;
   for (const child of schedule.children) {
     const date = new Date(child.id);
@@ -18,6 +20,26 @@ document.addEventListener("DOMContentLoaded", function () {
         child.classList.add("next");
         next = true;
       }
+    }
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const trainers = document.querySelectorAll(".grid.trainers")[0];
+  if (!trainers) return;
+
+  const now = new Date().toISOString().split("T")[0];
+  for (const trainer of trainers.children) {
+    for (const training of trainer.querySelectorAll("tr")) {
+      if (training.classList.contains("empty")) continue;
+      const date = training.getAttribute("data-date");
+      if (date < now) {
+        training.remove();
+      }
+    }
+
+    if (trainer.querySelectorAll("tr").length === 0) {
+      trainer.querySelector("table").innerHTML = '<tr class="empty"><td colspan="3">geen trainingen</td></tr>';
     }
   }
 });

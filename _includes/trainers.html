@@ -14,7 +14,6 @@
                 <button class="calendar" id="{{ trainer.id }}-calendar" onclick="copyLink('{{ cal_url }}')"><img src="{{ site.baseurl }}/assets/icons/date.png" style="height: 1em; aspect-ratio: auto;"></button>
             </div>
             <table>
-                {% assign counter = 0 %}
                 {% assign index = -1 %}
                 {% assign training_url = site.baseurl | append: "/2026/q2" %}
                 {% for day in trainings %}
@@ -23,32 +22,22 @@
                         {% assign training_url = site.baseurl | append: "/2026/q3" %}
                     {% endif %}
 
-                    {% capture trainingtime %}{{ day.date | date: '%s' }}{% endcapture %}
-                    {% if trainingtime > nowunix or day.date == today %}
-
-                        {% assign type = "ongoing" %}
-                        {% if day.cancelled %}
-                            {% assign type = "cancelled" %}
-                        {% endif %}
-
-                        {% for training in day.trainings %}
-                            {% if training.trainer contains trainer.name %}
-                                <tr class="{{ type }}">
-                                    <td class="right">{{ day.day }}</td>
-                                    <td class="italic">{{ day.date | date: "%d %b %Y" }}</td>
-                                    <td class="bold">{{ training.group }}</td>
-                                    <td><a href="{{ training_url }}#{{ day.date | date: '%Y-%m-%d' }}"><img src="{{ site.baseurl }}/assets/icons/visit.svg" style="height: 1em; aspect-ratio: auto;"></a></td>
-                                </tr>
-                                {% assign counter = counter | plus: 1 %}
-                            {% endif %}
-                        {% endfor %}
+                    {% assign type = "ongoing" %}
+                    {% if day.cancelled %}
+                        {% assign type = "cancelled" %}
                     {% endif %}
+
+                    {% for training in day.trainings %}
+                        {% if training.trainer contains trainer.name %}
+                            <tr class="{{ type }}" data-date="{{ day.date | date: '%Y-%m-%d' }}">
+                                <td class="right">{{ day.day }}</td>
+                                <td class="italic">{{ day.date | date: "%d %b %Y" }}</td>
+                                <td class="bold">{{ training.group }}</td>
+                                <td><a href="{{ training_url }}#{{ day.date | date: '%Y-%m-%d' }}"><img src="{{ site.baseurl }}/assets/icons/visit.svg" style="height: 1em; aspect-ratio: auto;"></a></td>
+                            </tr>
+                        {% endif %}
+                    {% endfor %}
                 {% endfor %}
-                {% if counter == 0 %}
-                    <tr class="empty">
-                        <td colspan="3">geen trainingen</td>
-                    </tr>
-                {% endif %}
             </table>
         </div>
     {% endfor %}
