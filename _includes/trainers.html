@@ -37,7 +37,7 @@
                                     <td class="right">{{ day.day }}</td>
                                     <td class="italic">{{ day.date | date: "%d %b %Y" }}</td>
                                     <td class="bold">{{ training.group }}</td>
-                                    <td><a href="{{ training_url }}#{{ day.date | date: '%Y%m%d' }}"><img src="{{ site.baseurl }}/assets/icons/visit.svg" style="height: 1em; aspect-ratio: auto;"></a></td>
+                                    <td><a href="{{ training_url }}#{{ day.date | date: '%Y-%m-%d' }}"><img src="{{ site.baseurl }}/assets/icons/visit.svg" style="height: 1em; aspect-ratio: auto;"></a></td>
                                 </tr>
                                 {% assign counter = counter | plus: 1 %}
                             {% endif %}
