@@ -8,10 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const schedule = document.getElementsByClassName("schedule")[0];
   if (!schedule) return;
 
-  const now = new Date();
+  const now = new Date().toISOString().split("T")[0];
   let next = false;
   for (const child of schedule.children) {
-    const date = new Date(child.id);
+    const date = child.id;
     if (date < now) {
       child.classList.remove("upcoming");
       child.classList.add("past");
