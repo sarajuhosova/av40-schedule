@@ -118,7 +118,8 @@ h1, h2 {
     margin: 1em 0 0 0;
 }
 
-.legend span {
+.legend span,
+.legend a {
     font-size: small;
 
     margin: 0 1em 0 0;
@@ -132,9 +133,19 @@ h1, h2 {
     color: white;
 }
 
+.legend a {
+    color: $blue;
+    border-color: $blue;
+}
+
 .legend .upcoming  { background-color: $blue;   border-color: $blue; }
 .legend .past      { background-color: $gray;   border-color: $gray; }
 .legend .cancelled { background-color: $orange; border-color: $orange; }
+
+.legend a:hover {
+    background-color: $blue;
+    color: white;
+}
 
 // --------------------------------------------//
 // TRAININGS --------------------------------- //

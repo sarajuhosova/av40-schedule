@@ -17,7 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
       child.classList.add("past");
     } else {
       if (!next) {
-        child.classList.add("next");
+        const nextLink = document.getElementById("next-training-link");
+        nextLink.href = nextLink.href.replace("#next", "#" + date);
         next = true;
       }
     }

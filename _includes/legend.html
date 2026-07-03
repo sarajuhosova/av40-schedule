@@ -2,4 +2,7 @@
     <span class="upcoming">Aankomende training</span>
     <span class="past">Afgelopen training</span>
     <span class="cancelled">Geen training</span>
+    {% if page.current %}
+        <a class="button" href="{{ site.baseurl }}/2026/q3#next" id="next-training-link">Naar de eerstvolgende training ↓</a>
+    {% endif %}
 </div>
