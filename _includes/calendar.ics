@@ -1,11 +1,8 @@
 BEGIN:VCALENDAR
-
 VERSION:2.0
 PRODID:"-//AV'40 Wegatletiek//Trainerkalender #{{ include.trainer.id }}//NL"
-
 X-WR-CALNAME:AV'40 Trainers
 CALSCALE:GREGORIAN
-
 BEGIN:VTIMEZONE
 TZID:Europe/Amsterdam
 TZURL:http://tzurl.org/zoneinfo-outlook/Europe/Amsterdam
@@ -25,35 +22,32 @@ DTSTART:19701025T030000
 RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
-
-{% assign today = 'now' | date: "%Y%m%d" %}
-
-{% assign previous = site.data.schedule.2026.q2 %}
-{% assign next = site.data.schedule.2026.q3 %}
-{% assign schedule = previous | concat: next %}
-{% for day in schedule %}
-{% if day.cancelled %}
-    {% continue %}
-{% endif %}
-{% for training in day.trainings %}
-{% if training.trainer contains include.trainer.name %}
-{% assign start = "1915" %}
-{% assign end = "2045" %}
-{% if day.day == "Zaterdag" %}
-{% assign start = "0900" %}
-{% assign end = "1030" %}
-{% endif %}
-{% assign date = day.date | date: "%Y%m%d" %}
+{%- assign today = 'now' | date: "%Y%m%d" %}
+{%- assign previous = site.data.schedule.2026.q2 %}
+{%- assign next = site.data.schedule.2026.q3 %}
+{%- assign schedule = previous | concat: next %}
+{%- for day in schedule %}
+{%- if day.cancelled %}
+    {%- continue %}
+{%- endif %}
+{%- for training in day.trainings %}
+{%- if training.trainer contains include.trainer.name %}
+{%- assign start = "1915" %}
+{%- assign end = "2045" %}
+{%- if day.day == "Zaterdag" %}
+{%- assign start = "0900" %}
+{%- assign end = "1030" %}
+{%- endif %}
+{%- assign date = day.date | date: "%Y%m%d" %}
 BEGIN:VEVENT
 ORGANIZER;CN="AV'40 Wegatletiek":MAILTO:noreply@sarajuhosova.com
 UID:trainer{{ date }}{{ include.trainer.id }}@sarajuhosova.com
-DTSTAMP:{{ today }}T000000Z
+DTSTAMP:{{ today }}T001100Z
 DTSTART;TZID=Europe/Amsterdam:{{ date }}T{{ start }}00
 DTEND;TZID=Europe/Amsterdam:{{ date }}T{{ end }}00
 SUMMARY:AV'40 Trainer [{{ training.group }}]
 END:VEVENT
-{% endif %}
-{% endfor %}
-{% endfor %}
-
+{%- endif %}
+{%- endfor %}
+{%- endfor %}
 END:VCALENDAR
