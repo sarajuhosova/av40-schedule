@@ -8,10 +8,6 @@ future: true
 
 plugins:
   - jekyll-relative-links
-  - jekyll-redirect-from
-
-whitelist:
-  - jekyll-redirect-from
 
 exclude:
   - .sass-cache/
