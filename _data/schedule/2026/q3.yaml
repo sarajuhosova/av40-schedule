@@ -90,7 +90,7 @@
   trainings:
     - group: "weg basis"
       warmup: true
-      trainer: ["Ingrid"]
+      trainer: ["Jan"]
       training:
         core: "6' + 11' + 16' <tt>T1-2</tt>"
         break: "P2'"
