@@ -331,7 +331,7 @@
   description: "fibonacci"
   trainings:
     - group: "1"
-      trainer: ["Julie"]
+      trainer: ["René"]
       warmup: true
       training:
         core: "1' + 1' + 2' + 3' + 5' + 8' + 5' <tt>T2</tt>"
@@ -360,7 +360,7 @@
   day: "Donderdag"
   trainings:
     - group: "weg basis"
-      trainer: ["Julie"]
+      trainer: ["René"]
       training:
         core: "2x 18' <tt>T1-2</tt>"
         break: "P2'"
@@ -447,7 +447,7 @@
       training: 
         core: "uittraining"
     - group: "1"
-      trainer: ["René"]
+      trainer: ["Julie"]
       training: 
         core: "40' fartlek <tt>variabel</tt>"
     - group: "2 + 3"
