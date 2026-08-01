@@ -323,7 +323,7 @@
   day: "Zaterdag"
   trainings:
     - group: "duurloop"
-      trainer: ["Jan"]
+      trainer: ["Kees"]
     - group: "wandelen"
       trainer: ["René"]
 - date: "2026-08-11"
