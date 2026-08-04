@@ -315,7 +315,7 @@
         core: "4x 10' <tt>T1-2</tt>"
         break: "P2'"
     - group: "baan"
-      trainer: ["Martijn", "Niels"]
+      trainer: ["Martijn", "Sander"]
       training:
         core: "4x (400 <tt>90% 5K</tt> + 200 <tt>100% 5K</tt> + 400 <tt>90% 5K</tt> + 200 <tt>100% 5K</tt>)"
         break: "P1'; SP2'"
