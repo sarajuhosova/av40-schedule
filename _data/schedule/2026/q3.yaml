@@ -358,6 +358,7 @@
         break: "P1'"
 - date: "2026-08-13"
   day: "Donderdag"
+  cancelled: true
   trainings:
     - group: "weg basis"
       trainer: ["René"]
@@ -397,7 +398,7 @@
         core: "12x 2' <tt>T2-2</tt>"
         break: "P1'"
     - group: "3"
-      trainer: ["Peter"]
+      trainer: ["Bram"]
       training:
         core: "12x 2' <tt>T3</tt>"
         break: "P1'"
