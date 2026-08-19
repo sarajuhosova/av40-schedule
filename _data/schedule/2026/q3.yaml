@@ -464,7 +464,7 @@
   day: "Donderdag"
   trainings:
     - group: "weg basis"
-      trainer: ["Ingrid"]
+      trainer: ["Liane"]
       warmup: true
       training:
         core: "4x 10' <tt>T1-2</tt>"
@@ -636,7 +636,7 @@
   day: "Donderdag"
   trainings:
     - group: "weg basis"
-      trainer: ["Bram"]
+      trainer: ["Peter"]
       training: 
         core: "3x 12' <tt>T1-2</tt>"
         break: "P90\""
