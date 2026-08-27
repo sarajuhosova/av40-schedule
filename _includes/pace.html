@@ -1,0 +1,29 @@
+<div class="pace">
+    <table>
+        <tr>
+            <th></th>
+            <th>min / km</th>
+            <th>min / 400m</th>
+            <th></th>
+        </tr>
+        {% for pace in site.data.paces.header %}
+            {% assign type = "" %}
+            {% if pace == "100%" %}
+                {% assign type = "target" %}
+            {% endif %}
+            <tr>
+                <th>{{ pace }}</th>
+                <td class="{{ type }}"></td>
+                <td class="{{ type }}"></td>
+                <!-- <td>{{ site.data.paces[pace].400m }}</td> -->
+                <th>{{ pace }}</th>
+            </tr>
+        {% endfor %}
+        <tr>
+            <th></th>
+            <th>min / km</th>
+            <th>min / 400m</th>
+            <th></th>
+        </tr>
+    </table>
+</div>

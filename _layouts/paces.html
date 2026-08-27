@@ -1,13 +1,16 @@
 <!doctype html>
 <html>
-  {% include head.html %}
+  <head>
+    {% include head.html %}
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/paces.js"></script>
+  </head>
   <body class="paces">
     <div class="navigation">
       <a class="prev" href="{{ site.baseurl }}/">Naar het schema</a>
     </div>
     <h1>AV'40 {{ page.title }} Tempo-overzicht</h1>
     <h2>Welk tempo moet ik lopen?</h2>
-    <div class="content">
+    <div class="content paces">
       {{ content }}
     </div>
   </body>

@@ -24,9 +24,12 @@
 
 @media (max-width: 1080px)  {
 
-    body,
-    body.paces {
+    body {
         width: 90%;
+    }
+
+    div.paces {
+        flex-direction: column;
     }
 
     .schedule {

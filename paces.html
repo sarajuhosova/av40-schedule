@@ -1,0 +1,58 @@
+---
+layout: paces
+title: 5K
+---
+
+<div class="pace-menu">
+    <h4>Afstand</h4>
+    <div class="distance">
+        <button id="5K" class="left selected" onclick="onDistanceClick('5K')">5K</button>
+        <button id="10K" class="center" onclick="onDistanceClick('10K')">10K</button>
+        <button id="HM" class="right" onclick="onDistanceClick('HM')">HM</button>
+    </div>
+    <h4>Doeltijd</h4>
+    <div class="time">
+        <input type="number" id="hours" min="0" max="3" value="00">
+        <input type="number" id="minutes" min="0" max="59" value="25">
+        <input type="number" id="seconds" min="0" max="59" value="00">
+    </div>
+    <div class="time-labels">
+        <span>uren</span>
+        <span>minuten</span>
+        <span>seconden</span>
+    </div>
+    <button id="go" onclick="updateTable()">Bereken</button>
+</div>
+<div class="pace-table">
+    <h2>
+        <span id="total-distance"></span>
+        in
+        <span id="total-time"></span>
+    </h2>
+    <table>
+        <tr>
+            <th></th>
+            <th>min / km</th>
+            <th>min / 400m</th>
+            <th></th>
+        </tr>
+        {% for percent in site.data.paces.header.percentages %}
+            {% assign type = "" %}
+            {% if percent == "100" %}
+                {% assign type = "target" %}
+            {% endif %}
+            <tr>
+                <th>{{ percent }}%</th>
+                <td id="km-{{ percent }}" class="{{ type }} km"></td>
+                <td id="lap-{{ percent }}" class="{{ type }} lap"></td>
+                <th>{{ percent }}%</th>
+            </tr>
+        {% endfor %}
+        <tr>
+            <th></th>
+            <th>min / km</th>
+            <th>min / 400m</th>
+            <th></th>
+        </tr>
+    </table>
+</div>

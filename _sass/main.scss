@@ -232,21 +232,94 @@ body.paces {
     align-items: center;
 }
 
-.navigation.paces {
-    justify-content: left;
-}
-
-.paces .button {
-    margin-right: 1em;
-}
-
-.paces span {
-    background-color: $blue;
-    border-color: $blue;
+.paces h4 {
+    margin-top: 0;
+    margin-bottom: 0em;
+    color: $blue;
 }
 
 div.paces {
+    display: flex;
+    gap: 2em;
+    flex: 1 auto;
+}
+
+.pace-menu {
+    position: sticky;
+    align-self: flex-start;
+
+    width: 30%;
+}
+
+.pace-table {
+    flex: auto;
+}
+
+.pace-menu .distance {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pace-menu h4,
+.pace-menu button#go {
     margin-top: 1em;
+}
+
+.pace-menu .time,
+.pace-menu .time-labels {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pace-menu .time-labels {
+    font-size: small;
+    color: $blue;
+    margin-top: 0;
+}
+
+.time-labels span {
+    text-align: right;
+}
+
+.pace-menu input,
+.pace-menu button {
+    width: 100%;
+    padding: .5em 1em;
+
+    font-weight: bold;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: $blue;
+    border-radius: $border-radius
+}
+
+.time input {
+    width: 25%;
+}
+.distance button {
+    width: 35%;
+}
+
+.pace-menu button.left {
+    border-radius: $border-radius 0 0 $border-radius;
+    border-right-width: 1px;
+}
+
+.pace-menu button.center {
+    border-radius: 0;
+    border-right-width: 1px;
+    border-left-width: 1px;
+}
+.pace-menu button.right {
+    border-radius: 0 $border-radius $border-radius 0;
+    border-left-width: 1px;
+}
+
+.pace-menu button.selected,
+.pace-menu button:hover {
+    background-color: $blue;
+    color: white;
 }
 
 .paces table {
@@ -265,7 +338,7 @@ div.paces {
 
 .paces td,
 .paces th {
-    padding: 0.5em;
+    padding: .5em 1em;
     text-align: center;
 }
 
