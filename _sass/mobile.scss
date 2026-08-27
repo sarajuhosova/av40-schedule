@@ -32,6 +32,15 @@
         flex-direction: column;
     }
 
+    .pace-menu {
+        width: 100%;
+    }
+
+    .paces td,
+    .paces th {
+        padding: .5em;
+    }
+
     .schedule {
         grid-template-columns: 1fr;
         margin: 1em 0;
