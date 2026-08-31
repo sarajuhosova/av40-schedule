@@ -34,25 +34,23 @@ title: Tempo-overzicht
             <th></th>
             <th>min / km</th>
             <th>min / 400m</th>
-            <th></th>
         </tr>
         {% for percent in site.data.paces.percentages %}
             {% assign type = "" %}
             {% if percent == "100" %}
                 {% assign type = "target" %}
             {% endif %}
+            
             <tr>
-                <th>{{ percent }}%</th>
+                <th class="p{{ percent }}">{{ percent }}%</th>
                 <td id="km-{{ percent }}" class="{{ type }} km"></td>
                 <td id="lap-{{ percent }}" class="{{ type }} lap"></td>
-                <th>{{ percent }}%</th>
             </tr>
         {% endfor %}
         <tr>
             <th></th>
             <th>min / km</th>
             <th>min / 400m</th>
-            <th></th>
         </tr>
     </table>
 </div>

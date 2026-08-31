@@ -330,16 +330,53 @@ div.paces {
     border-color: $blue;
 }
 
-.paces th,
-.paces .target {
+.paces th {
     background-color: $blue;
     color: white;
+}
+
+.paces .target {
+    background-color: rgba($blue, 0.2);
 }
 
 .paces td,
 .paces th {
     padding: .5em 1em;
     text-align: center;
+}
+
+.paces th.p107,
+.paces th.p105,
+.paces th.p102 {
+    background-color: rgb(185, 41, 41);
+}
+
+.paces th.p100 {
+    background-color: rgb(248, 166, 13);
+}
+
+.paces th.p97 {
+    background-color: rgb(209, 120, 135);
+}
+
+.paces th.p95,
+.paces th.p92 {
+    background-color: rgb(128, 3, 128);
+}
+
+.paces th.p90,
+.paces th.p87 {
+    background-color: rgb(53, 53, 194);
+}
+
+.paces th.p85,
+.paces th.p82 {
+    background-color: rgb(42, 139, 42);
+}
+
+.paces th.p80,
+.paces th.p75 {
+    background-color: rgb(103, 221, 103);
 }
 
 .paces tr:hover {
