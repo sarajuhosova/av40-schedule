@@ -683,7 +683,7 @@
         core: "5 x (5' <tt>82% 10K</tt> + 5' <tt>97% 10K</tt>)"
         break: "SP2'"
     - group: "5"
-      trainer: ["Niels"]
+      trainer: ["Odilia"]
       warmup: true
       training:
         core: "5 x (5' <tt>82% 10K</tt> + 5' <tt>97% 10K</tt>)"
@@ -728,7 +728,7 @@
       training: 
         core: "40' fartlek <tt>variabel</tt>"
     - group: "2 + 3"
-      trainer: ["Odilia"]
+      trainer: ["Niels"]
       training: 
         core: "45' fartlek <tt>variabel</tt>"
     - group: "4 + 5"
