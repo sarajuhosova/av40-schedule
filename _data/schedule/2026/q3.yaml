@@ -649,7 +649,7 @@
     - group: "baan"
       trainer: ["Wilbert", "Martijn"]
       training:
-        core: "6x 1000 <tt>95% 10K</tt>"
+        core: "6x 1000 <tt>100% 10K</tt>"
         break: "P90\""
 - date: "2026-09-19"
   day: "Zaterdag"
