@@ -606,32 +606,32 @@
       trainer: ["Julie"]
       training:
         core: "4x (1' + 2' + 3' + 2' + 1') <tt>T2-3</tt>"
-        break: "P1'; SP2'"
+        break: "P30\"; SP2'"
     - group: "2"
       trainer: ["Maurice"]
       training:
         core: "4x (1' + 2' + 3' + 3' + 2') <tt>T2-3</tt>"
-        break: "P1'; SP2'"
+        break: "P30\"; SP2'"
     - group: "3"
       trainer: ["Carina"]
       warmup: true
       training:
         core: "4x (1' + 2' + 3' + 3' + 2') <tt>T2-3</tt>"
-        break: "P1'; SP2'"
+        break: "P30\"; SP2'"
     - group: "4"
       trainer: ["Sára"]
       training:
         core: |
           4x (1' + 2' + 3' + 3' + 2' + 1') <br>
           <tt>1' @ 100% 10K / 2' @ 92% 10K / 3' @ 85% 10K</tt>
-        break: "P1'; SP2'"
+        break: "P30\"; SP2'"
     - group: "5"
       trainer: ["Niels"]
       training:
         core: |
           4x (1' + 2' + 3' + 3' + 2' + 1') <br>
           <tt>1' @ 100% 10K / 2' @ 92% 10K / 3' @ 85% 10K</tt>
-        break: "P1'; SP2'"
+        break: "P30\"; SP2'"
 - date: "2026-09-17"
   day: "Donderdag"
   trainings:
