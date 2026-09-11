@@ -1,6 +1,0 @@
----
-layout: none
----
-
-{%- assign trainer = site.data.trainers | find: "id", "lizeth" -%}
-{%- include calendar.ics trainer=trainer -%}

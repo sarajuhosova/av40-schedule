@@ -1,0 +1,16 @@
+{% for trainer in site.data.trainers %}
+{{ trainer.name }}
+{%- assign count = 0 -%}
+{%- for day in include.trainings -%}
+{%- for training in day.trainings -%}
+{%- if training.group == "7H" or training.group == "CPC" -%}
+{%- continue -%}
+{%- endif -%}
+{%- if training.trainer contains trainer.name -%}
+{% assign count = count | plus: 1 %}
+- {{ day.day | downcase }} {{ day.date }} - {{ training.group }}
+{%- endif -%}
+{%- endfor -%}
+{% endfor %}
+({{ count }})
+{% endfor %}

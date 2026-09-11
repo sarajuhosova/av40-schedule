@@ -587,7 +587,7 @@
         break: "P2'"
       warmup: true
     - group: "baan"
-      trainer: ["Martijn", "Klaas"]
+      trainer: ["Martijn"]
       training:
         core: "400 <tt>95% 5K</tt> + 800 <tt>80% 5K</tt> + 2x (6x 200 <tt>105% 5K</tt>) + 800 <tt>80% 5K</tt> + 400 <tt>80% 5K</tt>"
         break: "P1'; SP2'"
@@ -688,6 +688,10 @@
       training:
         core: "5 x (5' <tt>82% 10K</tt> + 5' <tt>97% 10K</tt>)"
         break: "SP2'"
+    - group: "7H"
+      trainer: ["Ron"]
+      training:
+        core: "[10K] Hanos-Mac-Hornbach 'dubbelloop'"
 - date: "2026-09-24"
   day: "Donderdag"
   description: "negative split"
@@ -736,6 +740,10 @@
       warmup: true
       training: 
         core: "45' fartlek <tt>variabel</tt>"
+    - group: "7H"
+      trainer: ["Ron"]
+      training:
+        core: "[10K] Rondje Drievlietbrug"
 - date: "2026-10-01"
   day: "Donderdag"
   trainings:
@@ -764,4 +772,4 @@
     - group: "duurloop"
       trainer: ["Lies"]
     - group: "wandelen"
-      trainer: ["??"]
+      trainer: ["René"]
