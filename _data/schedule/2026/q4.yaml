@@ -22,6 +22,10 @@
       training:
         core: ""
       trainer: ["Wilbert"]
+    - group: "7H"
+      trainer: ["??"]
+      training:
+        core: "[11.5K] Rondje Drievlietbrug"
 - date: 2026-10-08
   day: Donderdag
   trainings:
@@ -43,6 +47,8 @@
   trainings:
     - group: "hardlopen"
       trainer: ["Kees"]
+    - group: "wandelen"
+      trainer: ["Henry"]
 - date: 2026-10-13
   day: Dinsdag
   trainings:
@@ -67,6 +73,10 @@
         core: ""
       trainer: ["Niels"]
       warmup: true
+    - group: "7H"
+      trainer: ["Ron"]
+      training:
+        core: "[12.5K] Lange Kleiwegtunnel / Rijswijk"
 - date: 2026-10-15
   day: Donderdag
   trainings:
@@ -88,6 +98,12 @@
   trainings:
     - group: "hardlopen"
       trainer: ["Peter"]
+    - group: "wandelen"
+      trainer: ["Henry"]
+    - group: "7H"
+      trainer: ["Ron"]
+      training:
+        core: "[11K] Bruggenloop (Drievliet)"
 - date: 2026-10-20
   day: Dinsdag
   trainings:
@@ -112,6 +128,10 @@
         core: ""
       trainer: ["Wilbert"]
       warmup: true
+    - group: "7H"
+      trainer: ["Ron"]
+      training:
+        core: "[11.5K] TU Bibliotheek dak"
 - date: 2026-10-22
   day: Donderdag
   trainings:
@@ -133,6 +153,12 @@
   trainings:
     - group: "hardlopen"
       trainer: ["Coen"]
+    - group: "wandelen"
+      trainer: ["Astrid"]
+    - group: "7H"
+      trainer: ["Ron"]
+      training:
+        core: "[13K] Brienenoord"
 - date: 2026-10-27
   day: Dinsdag
   trainings:
@@ -152,6 +178,10 @@
       training:
         core: ""
       trainer: ["Wilbert"]
+    - group: "7H"
+      trainer: ["Ron"]
+      training:
+        core: "[12.5K] Rondje Drievlietbrug"
 - date: 2026-10-29
   day: Donderdag
   trainings:
@@ -173,6 +203,12 @@
   trainings:
     - group: "hardlopen"
       trainer: ["??"]
+    - group: "wandelen"
+      trainer: ["Astrid"]
+    - group: "7H"
+      trainer: ["Ron"]
+      training:
+        core: "[12.5K] Bruggenloopje (Drievliet)"
 - date: 2026-11-03
   day: Dinsdag
   trainings:
@@ -197,6 +233,10 @@
         core: ""
       trainer: ["Tanno"]
       warmup: true
+    - group: "7H"
+      trainer: ["Ron"]
+      training:
+        core: "[13.5K] Rondje Kruithuisweg"
 - date: 2026-11-05
   day: Donderdag
   trainings:
@@ -218,6 +258,8 @@
   trainings:
     - group: "hardlopen"
       trainer: ["Lies"]
+    - group: "wandelen"
+      trainer: ["Quirine"]
 - date: 2026-11-10
   day: Dinsdag
   trainings:
@@ -242,6 +284,10 @@
       training:
         core: ""
       trainer: ["Tanno"]
+    - group: "7H"
+      trainer: ["Ron"]
+      training:
+        core: "[10K] Rustige duurloop (2x 4K + 1x 2K)"
 - date: 2026-11-12
   day: Donderdag
   trainings:
@@ -263,6 +309,8 @@
   trainings:
     - group: "hardlopen"
       trainer: ["??"]
+    - group: "wandelen"
+      trainer: ["Quirine"]
 - date: 2026-11-17
   day: Dinsdag
   trainings:
@@ -308,6 +356,8 @@
   trainings:
     - group: "hardlopen"
       trainer: ["Jan"]
+    - group: "wandelen"
+      trainer: ["Henry"]
 - date: 2026-11-24
   day: Dinsdag
   trainings:
@@ -349,6 +399,8 @@
   trainings:
     - group: "hardlopen"
       trainer: ["Kees"]
+    - group: "wandelen"
+      trainer: ["Astrid"]
 - date: 2026-12-01
   day: Dinsdag
   trainings:
@@ -394,6 +446,8 @@
   trainings:
     - group: "hardlopen"
       trainer: ["Jan"]
+    - group: "wandelen"
+      trainer: ["Quirine"]
 - date: 2026-12-08
   day: Dinsdag
   trainings:
@@ -439,6 +493,8 @@
   trainings:
     - group: "hardlopen"
       trainer: ["Lies"]
+    - group: "wandelen"
+      trainer: ["Henry"]
 - date: 2026-12-15
   day: Dinsdag
   trainings:
@@ -480,6 +536,8 @@
   trainings:
     - group: "hardlopen"
       trainer: ["Jan"]
+    - group: "wandelen"
+      trainer: ["Astrid"]
 - date: 2026-12-22
   day: Dinsdag
   trainings:
