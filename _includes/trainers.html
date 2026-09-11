@@ -1,6 +1,6 @@
 <div class="grid trainers">
-    {% assign previous = site.data.schedule.2026.q2 %}
-    {% assign next = site.data.schedule.2026.q3 %}
+    {% assign previous = site.data.schedule.2026.q3 %}
+    {% assign next = site.data.schedule.2026.q4 %}
     {% assign trainings = previous | concat: next %}
 
     {% capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture %}

@@ -1,29 +1,540 @@
-- date: "2026-10-06"
-  day: "Dinsdag"
+- date: 2026-10-06
+  day: Dinsdag
   trainings:
     - group: "1"
-      trainer: ["??"]
+      training:
+        core: ""
+      trainer: ["Julie"]
     - group: "2"
-      trainer: ["??"]
+      training:
+        core: ""
+      trainer: ["Maurice"]
+      warmup: true
     - group: "3"
-      trainer: ["??"]
+      training:
+        core: ""
+      trainer: ["Carina"]
     - group: "4"
-      trainer: ["??"]
+      training:
+        core: ""
+      trainer: ["Sára"]
     - group: "5"
-      trainer: ["??"]
-- date: "2026-10-08"
-  day: "Donderdag"
+      training:
+        core: ""
+      trainer: ["Wilbert"]
+- date: 2026-10-08
+  day: Donderdag
   trainings:
-    - group: "basis"
-      trainer: ["??"]
-    - group: "weg"
-      trainer: ["??"]
+    - group: "weg basis"
+      training:
+        core: ""
+      trainer: ["Henry"]
+      warmup: true
+    - group: "weg plus"
+      training:
+        core: ""
+      trainer: ["Bram"]
     - group: "baan"
-      trainer: ["??", "??"]
-- date: "2026-10-10"
-  day: "Zaterdag"
+      training:
+        core: ""
+      trainer: ["Martijn", "Klaas"]
+- date: 2026-10-10
+  day: Zaterdag
   trainings:
-    - group: "duurloop"
+    - group: "hardlopen"
+      trainer: ["Kees"]
+- date: 2026-10-13
+  day: Dinsdag
+  trainings:
+    - group: "1"
+      training:
+        core: ""
+      trainer: ["Jan"]
+    - group: "2"
+      training:
+        core: ""
+      trainer: ["Paula"]
+    - group: "3"
+      training:
+        core: ""
+      trainer: ["Peter"]
+    - group: "4"
+      training:
+        core: ""
+      trainer: ["Odilia"]
+    - group: "5"
+      training:
+        core: ""
+      trainer: ["Niels"]
+      warmup: true
+- date: 2026-10-15
+  day: Donderdag
+  trainings:
+    - group: "weg basis"
+      training:
+        core: ""
+      trainer: ["Julie"]
+      warmup: true
+    - group: "weg plus"
+      training:
+        core: ""
+      trainer: ["Bram"]
+    - group: "baan"
+      training:
+        core: ""
+      trainer: ["Martijn", "Sára"]
+- date: 2026-10-17
+  day: Zaterdag
+  trainings:
+    - group: "hardlopen"
+      trainer: ["Peter"]
+- date: 2026-10-20
+  day: Dinsdag
+  trainings:
+    - group: "1"
+      training:
+        core: ""
+      trainer: ["Jan"]
+    - group: "2"
+      training:
+        core: ""
+      trainer: ["Maurice"]
+    - group: "3"
+      training:
+        core: ""
+      trainer: ["Carina"]
+    - group: "4"
+      training:
+        core: ""
+      trainer: ["Odilia"]
+    - group: "5"
+      training:
+        core: ""
+      trainer: ["Wilbert"]
+      warmup: true
+- date: 2026-10-22
+  day: Donderdag
+  trainings:
+    - group: "weg basis"
+      training:
+        core: ""
+      trainer: ["Henry"]
+    - group: "weg plus"
+      training:
+        core: ""
+      trainer: ["Bram"]
+      warmup: true
+    - group: "baan"
+      training:
+        core: ""
+      trainer: ["Klaas", "Niels"]
+- date: 2026-10-24
+  day: Zaterdag
+  trainings:
+    - group: "hardlopen"
+      trainer: ["Coen"]
+- date: 2026-10-27
+  day: Dinsdag
+  trainings:
+    - group: "uit"
+      training:
+        core: "uit-training"
+      trainer: ["Bram", "Maurice"]
+    - group: "1"
+      training:
+        core: ""
+      trainer: ["Jan"]
+    - group: "2 + 3"
+      training:
+        core: ""
+      trainer: ["Paula"]
+    - group: "4 + 5"
+      training:
+        core: ""
+      trainer: ["Wilbert"]
+- date: 2026-10-29
+  day: Donderdag
+  trainings:
+    - group: "weg basis"
+      training:
+        core: ""
+      trainer: ["Liane"]
+    - group: "weg plus"
+      training:
+        core: ""
+      trainer: ["Peter"]
+      warmup: true
+    - group: "baan"
+      training:
+        core: ""
+      trainer: ["Wilbert", "Sára"]
+- date: 2026-10-31
+  day: Zaterdag
+  trainings:
+    - group: "hardlopen"
       trainer: ["??"]
-    - group: "wandelen"
+- date: 2026-11-03
+  day: Dinsdag
+  trainings:
+    - group: "1"
+      training:
+        core: ""
+      trainer: ["Julie"]
+    - group: "2"
+      training:
+        core: ""
+      trainer: ["Raymond"]
+    - group: "3"
+      training:
+        core: ""
+      trainer: ["Paula"]
+    - group: "4"
+      training:
+        core: ""
+      trainer: ["Maurice"]
+    - group: "5"
+      training:
+        core: ""
+      trainer: ["Tanno"]
+      warmup: true
+- date: 2026-11-05
+  day: Donderdag
+  trainings:
+    - group: "weg basis"
+      training:
+        core: ""
+      trainer: ["Liane"]
+      warmup: true
+    - group: "weg plus"
+      training:
+        core: ""
+      trainer: ["Henry"]
+    - group: "baan"
+      training:
+        core: ""
+      trainer: ["Wilbert", "Niels"]
+- date: 2026-11-07
+  day: Zaterdag
+  trainings:
+    - group: "hardlopen"
+      trainer: ["Lies"]
+- date: 2026-11-10
+  day: Dinsdag
+  trainings:
+    - group: "1"
+      training:
+        core: ""
+      trainer: ["Jan"]
+    - group: "2"
+      training:
+        core: ""
+      trainer: ["Raymond"]
+      warmup: true
+    - group: "3"
+      training:
+        core: ""
+      trainer: ["Carina"]
+    - group: "4"
+      training:
+        core: ""
+      trainer: ["Bram"]
+    - group: "5"
+      training:
+        core: ""
+      trainer: ["Tanno"]
+- date: 2026-11-12
+  day: Donderdag
+  trainings:
+    - group: "weg basis"
+      training:
+        core: ""
+      trainer: ["Liane"]
+    - group: "weg plus"
+      training:
+        core: ""
+      trainer: ["Maurice"]
+      warmup: true
+    - group: "baan"
+      training:
+        core: ""
+      trainer: ["Wilbert", "Klaas"]
+- date: 2026-11-14
+  day: Zaterdag
+  trainings:
+    - group: "hardlopen"
       trainer: ["??"]
+- date: 2026-11-17
+  day: Dinsdag
+  trainings:
+    - group: "1"
+      training:
+        core: ""
+      trainer: ["Julie"]
+    - group: "2"
+      training:
+        core: ""
+      trainer: ["Paula"]
+    - group: "3"
+      training:
+        core: ""
+      trainer: ["Peter"]
+    - group: "4"
+      training:
+        core: ""
+      trainer: ["Carina"]
+      warmup: true
+    - group: "5"
+      training:
+        core: ""
+      trainer: ["Tanno"]
+- date: 2026-11-19
+  day: Donderdag
+  trainings:
+    - group: "weg basis"
+      training:
+        core: ""
+      trainer: ["Henry"]
+      warmup: true
+    - group: "weg plus"
+      training:
+        core: ""
+      trainer: ["Raymond"]
+    - group: "baan"
+      training:
+        core: ""
+      trainer: ["Wilbert", "Odilia"]
+- date: 2026-11-21
+  day: Zaterdag
+  trainings:
+    - group: "hardlopen"
+      trainer: ["Jan"]
+- date: 2026-11-24
+  day: Dinsdag
+  trainings:
+    - group: "uit"
+      training:
+        core: "uit-training"
+      trainer: ["Maurice", "Bram"]
+    - group: "1"
+      training:
+        core: ""
+      trainer: ["Julie"]
+    - group: "2 + 3"
+      training:
+        core: ""
+      trainer: ["Peter"]
+    - group: "4 + 5"
+      training:
+        core: ""
+      trainer: ["Sára"]
+      warmup: true
+- date: 2026-11-26
+  day: Donderdag
+  trainings:
+    - group: "weg basis"
+      training:
+        core: ""
+      trainer: ["Liane"]
+    - group: "weg plus"
+      training:
+        core: ""
+      trainer: ["Peter"]
+      warmup: true
+    - group: "baan"
+      training:
+        core: ""
+      trainer: ["Odilia", "Niels"]
+- date: 2026-11-28
+  day: Zaterdag
+  trainings:
+    - group: "hardlopen"
+      trainer: ["Kees"]
+- date: 2026-12-01
+  day: Dinsdag
+  trainings:
+    - group: "1"
+      training:
+        core: ""
+      trainer: ["Corrine"]
+      warmup: true
+    - group: "2"
+      training:
+        core: ""
+      trainer: ["Paula"]
+    - group: "3"
+      training:
+        core: ""
+      trainer: ["Raymond"]
+    - group: "4"
+      training:
+        core: ""
+      trainer: ["Carina"]
+    - group: "5"
+      training:
+        core: ""
+      trainer: ["Odilia"]
+- date: 2026-12-03
+  day: Donderdag
+  trainings:
+    - group: "weg basis"
+      training:
+        core: ""
+      trainer: ["Henry"]
+    - group: "weg plus"
+      training:
+        core: ""
+      trainer: ["Raymond"]
+      warmup: true
+    - group: "baan"
+      training:
+        core: ""
+      trainer: ["Sára", "Martijn"]
+- date: 2026-12-05
+  day: Zaterdag
+  trainings:
+    - group: "hardlopen"
+      trainer: ["Jan"]
+- date: 2026-12-08
+  day: Dinsdag
+  trainings:
+    - group: "1"
+      training:
+        core: ""
+      trainer: ["Corrine"]
+    - group: "2"
+      training:
+        core: ""
+      trainer: ["Paula"]
+    - group: "3"
+      training:
+        core: ""
+      trainer: ["Maurice"]
+    - group: "4"
+      training:
+        core: ""
+      trainer: ["Niels"]
+    - group: "5"
+      training:
+        core: ""
+      trainer: ["Odilia"]
+      warmup: true
+- date: 2026-12-10
+  day: Donderdag
+  trainings:
+    - group: "weg basis"
+      training:
+        core: ""
+      trainer: ["Liane"]
+    - group: "weg plus"
+      training:
+        core: ""
+      trainer: ["Bram"]
+      warmup: true
+    - group: "baan"
+      training:
+        core: ""
+      trainer: ["Sára", "Martijn"]
+- date: 2026-12-12
+  day: Zaterdag
+  trainings:
+    - group: "hardlopen"
+      trainer: ["Lies"]
+- date: 2026-12-15
+  day: Dinsdag
+  trainings:
+    - group: "Coopertest"
+      training:
+        core: ""
+      trainer: ["Maurice"]
+    - group: "1"
+      training:
+        core: ""
+      trainer: ["Corrine"]
+    - group: "2 + 3"
+      training:
+        core: ""
+      trainer: ["Bram"]
+    - group: "4 + 5"
+      training:
+        core: ""
+      trainer: ["Wilbert"]
+      warmup: true
+- date: 2026-12-17
+  day: Donderdag
+  trainings:
+    - group: "weg basis"
+      training:
+        core: ""
+      trainer: ["Julie"]
+      warmup: true
+    - group: "weg plus"
+      training:
+        core: ""
+      trainer: ["Henry"]
+    - group: "baan"
+      training:
+        core: ""
+      trainer: ["Niels", "Martijn"]
+- date: 2026-12-19
+  day: Zaterdag
+  trainings:
+    - group: "hardlopen"
+      trainer: ["Jan"]
+- date: 2026-12-22
+  day: Dinsdag
+  trainings:
+    - group: "1"
+      training:
+        core: ""
+      trainer: ["Julie"]
+    - group: "2"
+      training:
+        core: ""
+      trainer: ["Jan"]
+      warmup: true
+    - group: "3"
+      training:
+        core: ""
+      trainer: ["Maurice"]
+    - group: "4"
+      training:
+        core: ""
+      trainer: ["Sára"]
+    - group: "5"
+      training:
+        core: ""
+      trainer: ["Odilia"]
+- date: 2026-12-24
+  day: Donderdag
+  cancelled: true
+- date: 2026-12-26
+  day: Zaterdag
+  cancelled: true
+- date: 2026-12-29
+  day: Dinsdag
+  trainings:
+    - group: "uit"
+      training:
+        core: "uit-training"
+      trainer: ["Maurice", "Bram"]
+    - group: "1"
+      training:
+        core: ""
+      trainer: ["Julie"]
+    - group: "2 + 3"
+      training:
+        core: ""
+      trainer: ["Raymond"]
+    - group: "4 + 5"
+      training:
+        core: ""
+      trainer: ["Niels"]
+      warmup: true
+- date: 2026-12-31
+  day: Donderdag
+  cancelled: true
+- date: 2027-01-02
+  day: Zaterdag
+  trainings:
+    - group: "hardlopen"
+      trainer: ["Kees"]
