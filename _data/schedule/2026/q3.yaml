@@ -608,7 +608,7 @@
         core: "4x (1' + 2' + 3' + 2' + 1') <tt>T2-3</tt>"
         break: "P30\"; SP2'"
     - group: "2"
-      trainer: ["Maurice"]
+      trainer: ["Paula"]
       training:
         core: "4x (1' + 2' + 3' + 3' + 2') <tt>T2-3</tt>"
         break: "P30\"; SP2'"
