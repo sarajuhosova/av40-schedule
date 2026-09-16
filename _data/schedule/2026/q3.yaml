@@ -663,7 +663,7 @@
   description: "modulatieloop"
   trainings:
     - group: "1"
-      trainer: ["Liane"]
+      trainer: ["Ingrid"]
       training:
         core: "4 x (5' <tt>T1</tt> + 5' <tt>T3</tt>)"
         break: "SP2'"
@@ -697,7 +697,7 @@
   description: "negative split"
   trainings:
     - group: "weg basis"
-      trainer: ["Ingrid"]
+      trainer: ["Liane"]
       training:
         core: "20' aan één stuk <tt>T1-2</tt>; <br> zelfde weg terug in minder dan 20'"
         break: "P2'"
