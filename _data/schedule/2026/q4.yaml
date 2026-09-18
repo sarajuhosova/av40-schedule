@@ -25,7 +25,8 @@
     - group: "7H"
       trainer: ["??"]
       training:
-        core: "[11.5K] Rondje Drievlietbrug"
+        core: "Rondje Drievlietbrug"
+        distance: 11.5K
 - date: 2026-10-08
   day: Donderdag
   trainings:
@@ -76,7 +77,8 @@
     - group: "7H"
       trainer: ["Ron"]
       training:
-        core: "[12.5K] Lange Kleiwegtunnel / Rijswijk"
+        core: "Lange Kleiwegtunnel / Rijswijk"
+        distance: 12.5K
 - date: 2026-10-15
   day: Donderdag
   trainings:
@@ -103,7 +105,8 @@
     - group: "7H"
       trainer: ["Ron"]
       training:
-        core: "[11K] Bruggenloop (Drievliet)"
+        core: "Bruggenloop (Drievliet)"
+        distance: 11K
 - date: 2026-10-20
   day: Dinsdag
   trainings:
@@ -131,7 +134,8 @@
     - group: "7H"
       trainer: ["Ron"]
       training:
-        core: "[11.5K] TU Bibliotheek dak"
+        core: "TU Bibliotheek dak"
+        distance: 11.5K
 - date: 2026-10-22
   day: Donderdag
   trainings:
@@ -158,7 +162,8 @@
     - group: "7H"
       trainer: ["Ron"]
       training:
-        core: "[13K] Brienenoord"
+        core: "Brienenoord"
+        distance: 13K
 - date: 2026-10-27
   day: Dinsdag
   trainings:
@@ -181,7 +186,8 @@
     - group: "7H"
       trainer: ["Ron"]
       training:
-        core: "[12.5K] Rondje Drievlietbrug"
+        core: "Rondje Drievlietbrug"
+        distance: 12.5K
 - date: 2026-10-29
   day: Donderdag
   trainings:
@@ -208,7 +214,8 @@
     - group: "7H"
       trainer: ["Ron"]
       training:
-        core: "[12.5K] Bruggenloopje (Drievliet)"
+        core: "Bruggenloopje (Drievliet)"
+        distance: 12.5K
 - date: 2026-11-03
   day: Dinsdag
   trainings:
@@ -236,7 +243,8 @@
     - group: "7H"
       trainer: ["Ron"]
       training:
-        core: "[13.5K] Rondje Kruithuisweg"
+        core: "Rondje Kruithuisweg"
+        distance: 13.5K
 - date: 2026-11-05
   day: Donderdag
   trainings:
@@ -287,7 +295,8 @@
     - group: "7H"
       trainer: ["Ron"]
       training:
-        core: "[10K] Rustige duurloop (2x 4K + 1x 2K)"
+        core: "Rustige duurloop (2x 4K + 1x 2K)"
+        distance: 10K
 - date: 2026-11-12
   day: Donderdag
   trainings:

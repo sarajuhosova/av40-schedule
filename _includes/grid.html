@@ -28,7 +28,13 @@
                     </td>
                     <td class="italic">{{ training.trainer | join: "<br>" }}</td>
                     <td>{{ training.training.core }}</td>
-                    <td>{{ training.training.break }}</td>
+                    <td>
+                        {% if training.training.break != nil %}
+                            {{ training.training.break }}
+                        {% else %}
+                            {{ training.training.distance }}
+                        {% endif %}
+                    </td>
                 </tr>
                 {% endfor %}
             </table>

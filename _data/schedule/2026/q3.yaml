@@ -691,7 +691,8 @@
     - group: "7H"
       trainer: ["Ron"]
       training:
-        core: "[10K] Hanos-Mac-Hornbach 'dubbelloop'"
+        core: "Hanos-Mac-Hornbach 'dubbelloop'"
+        distance: 10K
 - date: "2026-09-24"
   day: "Donderdag"
   description: "negative split"
@@ -743,7 +744,8 @@
     - group: "7H"
       trainer: ["Ron"]
       training:
-        core: "[10K] Rondje Drievlietbrug"
+        core: "Rondje Drievlietbrug"
+        distance: 10K
 - date: "2026-10-01"
   day: "Donderdag"
   trainings:
