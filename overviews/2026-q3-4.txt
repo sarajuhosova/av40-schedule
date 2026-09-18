@@ -2,8 +2,8 @@
 layout: none
 ---
 
-{%- assign fst = site.data.schedule.2026.q3 -%}
-{%- assign snd = site.data.schedule.2026.q4 -%}
+{%- assign fst = site.data.schedule.y2026.q3 -%}
+{%- assign snd = site.data.schedule.y2026.q4 -%}
 {%- assign trainings = fst | concat: snd -%}
 
 {% include overview.txt trainings=trainings %}

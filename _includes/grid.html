@@ -1,5 +1,9 @@
+{% capture y %}y{{ page.time.year }}{% endcapture %}
+{% assign schedule = site.data.schedule[y] %}
+{% capture q %}q{{ page.time.quarter }}{% endcapture %}
+
 <div class="grid schedule">
-    {% for day in include.schedule %}
+    {% for day in schedule[q] %}
         {% assign type = "upcoming" %}
         {% if day.cancelled %}
             {% assign type = "cancelled" %}

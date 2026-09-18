@@ -1,10 +1,7 @@
 <div class="grid trainers">
-    {% assign previous = site.data.schedule.2026.q3 %}
-    {% assign next = site.data.schedule.2026.q4 %}
-    {% assign trainings = previous | concat: next %}
-
-    {% capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture %}
     {% capture today %}{{ 'now' | date: "%Y-%m-%d" }}{% endcapture %}
+
+    {% assign quarters = site.data.schedule.index | where_exp: "item", "item.end >= today" %}
 
     {% for trainer in site.data.trainers %}
         <div class="grid-item" id="{{ trainer.id }}">
@@ -14,28 +11,15 @@
                 <button class="calendar" id="{{ trainer.id }}-calendar" onclick="copyLink('{{ cal_url }}')"><img src="{{ site.baseurl }}/assets/icons/date.png" style="height: 1em; aspect-ratio: auto;"></button>
             </div>
             <table>
-                {% assign index = -1 %}
-                {% assign training_url = site.baseurl | append: "/2026/q2" %}
-                {% for day in trainings %}
-                    {% assign index = index | plus: 1 %}
-                    {% if index >= previous.size %}
-                        {% assign training_url = site.baseurl | append: "/2026/q3" %}
-                    {% endif %}
+                {% for quarter in quarters %}
+                    {% capture training_url %}{{ site.baseurl }}/{{ quarter.year }}/q{{ quarter.quarter }}{% endcapture %}
 
-                    {% assign type = "ongoing" %}
-                    {% if day.cancelled %}
-                        {% assign type = "cancelled" %}
-                    {% endif %}
+                    {% capture y %}y{{ quarter.year }}{% endcapture %}
+                    {% assign year = site.data.schedule[y] %}
+                    {% capture q %}q{{ quarter.quarter }}{% endcapture %}
 
-                    {% for training in day.trainings %}
-                        {% if training.trainer contains trainer.name %}
-                            <tr class="{{ type }}" data-date="{{ day.date | date: '%Y-%m-%d' }}">
-                                <td class="right">{{ day.day }}</td>
-                                <td class="italic">{{ day.date | date: "%d %b %Y" }}</td>
-                                <td class="bold">{{ training.group }}</td>
-                                <td><a href="{{ training_url }}#{{ day.date | date: '%Y-%m-%d' }}"><img src="{{ site.baseurl }}/assets/icons/visit.svg" style="height: 1em; aspect-ratio: auto;"></a></td>
-                            </tr>
-                        {% endif %}
+                    {% for day in year[q] %}
+                        {% include training.html day=day url=training_url trainer=trainer %}
                     {% endfor %}
                 {% endfor %}
             </table>

@@ -1,0 +1,12 @@
+- year: 2026
+  quarter: 2
+  start: "2026-06-15"
+  end: "2026-06-28"
+- year: 2026
+  quarter: 3
+  start: "2026-06-29"
+  end: "2026-10-04"
+- year: 2026
+  quarter: 4
+  start: "2026-10-05"
+  end: "2027-01-03"

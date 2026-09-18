@@ -22,10 +22,17 @@ DTSTART:19701025T030000
 RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
+{%- assign today = 'now' | date: "%Y-%m-%d" %}
+{%- assign schedule = [] %}
+{%- for quarter in site.data.schedule.index %}
+{%- if quarter.end >= today %}
+{%- capture y %}y{{ quarter.year }}{% endcapture %}
+{%- assign year = site.data.schedule[y] %}
+{%- capture q %}q{{ quarter.quarter }}{% endcapture %}
+{%- assign schedule = schedule | concat: year[q] %}
+{%- endif %}
+{%- endfor %}
 {%- assign today = 'now' | date: "%Y%m%d" %}
-{%- assign previous = site.data.schedule.2026.q3 %}
-{%- assign next = site.data.schedule.2026.q4 %}
-{%- assign schedule = previous | concat: next %}
 {%- for day in schedule %}
 {%- if day.cancelled %}
     {%- continue %}
