@@ -14,6 +14,15 @@ h1, h2 {
     color: $blue;
 }
 
+.home {
+    text-decoration: none;
+    color: $blue;
+}
+
+.home:hover {
+    text-decoration: underline;
+}
+
 // --------------------------------------------//
 // NAVIGATION BAR ---------------------------- //
 // --------------------------------------------//
@@ -54,6 +63,16 @@ h1, h2 {
 
 .navigation .next {
     float: right;
+}
+
+.navigation .past {
+    color: $gray;
+    border-color: $gray;
+}
+
+.navigation .past:hover {
+    background-color: $gray;
+    color: white;
 }
 
 // --------------------------------------------//

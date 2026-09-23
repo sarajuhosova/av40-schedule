@@ -1,0 +1,17 @@
+---
+layout: home
+title: AV'40 Wegatletiekschema
+---
+
+<div class="navigation">
+    {% capture today %}{{ 'now' | date: "%Y-%m-%d" }}{% endcapture %}
+
+    {% for post in site.posts | reverse %}
+        {% assign date = post.time.end | date: "%Y-%m-%d" %}
+        {% assign class = "future" %}
+        {% if date < today %}
+            {% assign class = "past" %}
+        {% endif %}
+        <a class="button {{ class }}" href="{{ site.baseurl }}{{ post.url }}">{{ post.time.year }} Q{{ post.time.quarter }} →</a>
+    {% endfor %}
+</div>
