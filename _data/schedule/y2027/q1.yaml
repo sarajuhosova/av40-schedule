@@ -1,0 +1,8 @@
+- date: "2027-01-05"
+  day: "Dinsdag"
+  description: "Nieuwjaarsloop"
+  trainings:
+    - group: "AV'40"
+      trainer: ["Sára", "Odilia", "Martijn", "Jelco"]
+      training: 
+        core: "Nieuwjaarsloop"
