@@ -733,11 +733,11 @@
       training: 
         core: "40' fartlek <tt>variabel</tt>"
     - group: "2 + 3"
-      trainer: ["Niels"]
+      trainer: ["René"]
       training: 
         core: "45' fartlek <tt>variabel</tt>"
     - group: "4 + 5"
-      trainer: ["Carina"]
+      trainer: ["Sander"]
       warmup: true
       training: 
         core: "45' fartlek <tt>variabel</tt>"
