@@ -68,17 +68,17 @@
   trainings:
     - group: "1"
       training:
-        core: "4x (3' <tt>T1</tt> + 2' <tt>T2</tt> + 1' <tt>T3</tt>)"
+        core: "4x (3' <tt>T1</tt> + 3' <tt>T2</tt> + 1' <tt>T3</tt>)"
         break: "SP2'"
       trainer: ["Jan"]
     - group: "2"
       training:
-        core: "4x (3' <tt>T1</tt> + 2'30\" <tt>T2</tt> + 2' <tt>T3</tt>)"
+        core: "4x (3' <tt>T1</tt> + 3' <tt>T2</tt> + 2' <tt>T3</tt>)"
         break: "SP2'"
       trainer: ["Paula"]
     - group: "3"
       training:
-        core: "4x (3' <tt>T1</tt> + 3' <tt>T2</tt> + 3' <tt>T3</tt>)"
+        core: "4x (3' <tt>T1</tt> + 4' <tt>T2</tt> + 2' <tt>T3</tt>)"
         break: "SP2'"
       trainer: ["Peter"]
     - group: "4"
