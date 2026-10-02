@@ -430,7 +430,9 @@
       trainer: ["Raymond"]
     - group: "baan"
       training:
-        core: "3x (800 <tt>95% 10K</tt> + 200 <tt>100% 5K</tt> <br> + 600 <tt>97% 10K</tt>)"
+        core: |
+          3x (800 <tt>95% 10K</tt> + 200 <tt>100% 5K</tt> <br> + 600 <tt>97% 10K</tt>)
+          + "toetje" 4x (100 <tt>80% 5K</tt> + 100 <tt>107% 5K</tt>)
         break: "P200; SP2'"
       trainer: ["Wilbert", "Odilia"]
 - date: 2026-11-21
