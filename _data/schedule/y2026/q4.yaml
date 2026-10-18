@@ -273,12 +273,12 @@
       trainer: ["Paula"]
     - group: "4"
       training:
-        core: "1' + 1' + 2' + 3' + 5' + 8' + 13' <tt>100% 10K</tt>"
+        core: "1' + 1' + 2' + 3' + 5' + 8' + 13' <tt>95% 10K</tt>"
         break: "P1'"
       trainer: ["Maurice"]
     - group: "5"
       training:
-        core: "1' + 1' + 2' + 3' + 5' + 8' + 13' <tt>100% 10K</tt>"
+        core: "1' + 1' + 2' + 3' + 5' + 8' + 13' <tt>95% 10K</tt>"
         break: "P1'"
       trainer: ["Tanno"]
       warmup: true
