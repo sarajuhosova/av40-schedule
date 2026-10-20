@@ -461,7 +461,7 @@
     - group: "4 + 5"
       training:
         core: "45' fartlek <tt>variabel</tt>"
-      trainer: ["Sára"]
+      trainer: ["Jelco", "René"]
       warmup: true
 - date: 2026-11-26
   day: Donderdag
@@ -537,7 +537,7 @@
       training:
         core: "6-8x (600 <tt>95% 10K</tt> + 400 <tt>105% 10K</tt>)"
         break: "SP2'"
-      trainer: ["Sára", "Martijn"]
+      trainer: ["Jelco", "Sára", "René"]
 - date: 2026-12-05
   day: Zaterdag
   description: "Sinterklaas!"
@@ -593,7 +593,7 @@
       training:
         core: "6x 1000 <tt>tempowissel 95% / 105% 10K</tt>"
         break: "P200"
-      trainer: ["Sára", "Martijn"]
+      trainer: ["Jelco", "Martijn", "René"]
 - date: 2026-12-12
   day: Zaterdag
   trainings:
