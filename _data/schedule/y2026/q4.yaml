@@ -495,18 +495,18 @@
   trainings:
     - group: "1"
       training:
-        core: "7x series van 4' (na elke minuut tempo omhoog) <br> <tt>85% → 105% 10K</tt>"
+        core: "7x series van 4' (na elke minuut tempo omhoog) <br> <tt>T1-4</tt>"
         break: "SP90\""
       trainer: ["Corrine"]
       warmup: true
     - group: "2"
       training:
-        core: "8x series van 4' (na elke minuut tempo omhoog) <br> <tt>85% → 105% 10K</tt>"
+        core: "8x series van 4' (na elke minuut tempo omhoog) <br> <tt>T1-4</tt>"
         break: "SP90\""
       trainer: ["Paula"]
     - group: "3"
       training:
-        core: "9x series van 4' (na elke minuut tempo omhoog) <br> <tt>85% → 105% 10K</tt>"
+        core: "9x series van 4' (na elke minuut tempo omhoog) <br> <tt>T1-4</tt>"
         break: "SP90\""
       trainer: ["Raymond"]
     - group: "4"
