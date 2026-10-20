@@ -329,7 +329,7 @@
           8' + 7' + 6' + 5' + 4' + 3' + 2' + 1' <br>
           <tt>tempo bij elk interval iets omhoog (T1 → T4)</tt>
         break: "P1'"
-      trainer: ["Raymond"]
+      trainer: ["Jelco", "René"]
       warmup: true
     - group: "3"
       training:
@@ -636,7 +636,7 @@
       training:
         core: "2x 20' <tt>T1-2</tt>"
         break: "P2'"
-      trainer: ["Henry"]
+      trainer: ["Jelco", "René"]
     - group: "baan"
       training:
         core: "4x 1600 <tt>95% 10K</tt>"
