@@ -233,7 +233,7 @@
       training:
         core: "5x 9' <tt>T1-2</tt>"
         break: "P90\""
-      trainer: ["Peter"]
+      trainer: ["Carina"]
       warmup: true
     - group: "baan"
       training:
