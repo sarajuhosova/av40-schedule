@@ -486,7 +486,7 @@
   day: Zaterdag
   trainings:
     - group: "hardlopen"
-      trainer: ["Kees"]
+      trainer: ["Coen"]
     - group: "wandelen"
       trainer: ["Astrid"]
 - date: 2026-12-01
