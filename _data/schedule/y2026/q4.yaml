@@ -239,7 +239,7 @@
       training:
         core: "2000 <tt>95% 10K</tt> + 2x 1000 <tt>100% 10K</tt> <br> + 3-5x 400 <tt>105% 10K</tt>"
         break: "P2'/90\"/1'"
-      trainer: ["Jason", " Sára", "Wilbert"]
+      trainer: ["Jason", " Sára"]
 - date: 2026-10-31
   day: Zaterdag
   trainings:
