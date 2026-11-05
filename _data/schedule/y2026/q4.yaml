@@ -526,7 +526,7 @@
       training:
         core: "3x 12' <tt>T1-2</tt>"
         break: "P2'"
-      trainer: ["Henry"]
+      trainer: ["Liane"]
     - group: "weg plus"
       training:
         core: "4x 10' <tt>T1-2</tt>"
@@ -582,7 +582,7 @@
       training:
         core: "16' + 9' + 4' + 4' + 1' <tt>T1-2</tt>"
         break: "P2'"
-      trainer: ["Liane"]
+      trainer: ["Henry"]
     - group: "weg plus"
       training:
         core: "16' + 9' + 4' + 4' + 1' <tt>T1-2</tt>"
