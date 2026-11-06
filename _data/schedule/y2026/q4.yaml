@@ -421,7 +421,7 @@
       training:
         core: "2x 18' <tt>T1-2</tt>"
         break: "P2'"
-      trainer: ["Julie"]
+      trainer: ["Liane"]
       warmup: true
     - group: "weg plus"
       training:
@@ -470,7 +470,7 @@
       training:
         core: "23' + 14' + 5' <tt>T1-2</tt>"
         break: "P2'"
-      trainer: ["Liane"]
+      trainer: ["Julie"]
     - group: "weg plus"
       training:
         core: "25' + 15' + 5' <tt>T1-2</tt>"
