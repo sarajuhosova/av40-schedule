@@ -182,7 +182,7 @@
       training:
         core: "4-5x (1000 <tt>95% 10K</tt> + 400 <tt>105% 10K</tt>)"
         break: "P90\"; SP2'"
-      trainer: ["Klaas", "Wilbert"]
+      trainer: ["Jason", "Klaas", "Wilbert"]
 - date: 2026-10-24
   day: Zaterdag
   trainings:
@@ -376,7 +376,7 @@
       training:
         core: "12x 400 <tt>95% 5K</tt>"
         break: "P2'"
-      trainer: ["Wilbert", "Klaas"]
+      trainer: ["Jason", "Klaas", "Niels"]
 - date: 2026-11-14
   day: Zaterdag
   trainings:
@@ -402,7 +402,7 @@
       training:
         core: "5x 7' <tt>T1-2</tt>"
         break: "P2'"
-      trainer: ["Peter"]
+      trainer: ["Jason", "Peter"]
     - group: "4"
       training:
         core: "5x 8' <tt>85% 10K</tt>"
@@ -481,7 +481,7 @@
       training:
         core: "4x (1200 <tt>95% 10K</tt> + 400 <tt>100% 10K</tt>)"
         break: "SP2'"
-      trainer: ["Odilia", "Niels"]
+      trainer: ["Jason", "Odilia", "Niels"]
 - date: 2026-11-28
   day: Zaterdag
   trainings:
