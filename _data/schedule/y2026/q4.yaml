@@ -673,7 +673,7 @@
       training:
         core: "5 x (5' <tt>80% 10K</tt> + 5' <tt>100% 10K</tt>)"
         break: "SP2'"
-      trainer: ["Sára"]
+      trainer: ["Jelco", "René"]
     - group: "5"
       training:
         core: "5 x (5' <tt>80% 10K</tt> + 5' <tt>100% 10K</tt>)"
