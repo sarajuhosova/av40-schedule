@@ -537,7 +537,7 @@
       training:
         core: "6-8x (600 <tt>95% 10K</tt> + 400 <tt>105% 10K</tt>)"
         break: "SP2'"
-      trainer: ["Jelco", "Sára", "René"]
+      trainer: ["Sára", "Martijn"]
 - date: 2026-12-05
   day: Zaterdag
   description: "Sinterklaas!"
