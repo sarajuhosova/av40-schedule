@@ -453,7 +453,7 @@
     - group: "1"
       training:
         core: "40' fartlek <tt>variabel</tt>"
-      trainer: ["Julie"]
+      trainer: ["Corrine"]
     - group: "2 + 3"
       training:
         core: "45' fartlek <tt>variabel</tt>"
@@ -497,7 +497,7 @@
       training:
         core: "7x series van 4' (na elke minuut tempo omhoog) <br> <tt>T1-4</tt>"
         break: "SP90\""
-      trainer: ["Corrine"]
+      trainer: ["Julie"]
       warmup: true
     - group: "2"
       training:
