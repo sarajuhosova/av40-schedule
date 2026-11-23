@@ -620,7 +620,7 @@
     - group: "4 + 5"
       training:
         core: "40' uitloop <tt>T1-2</tt>"
-      trainer: ["Wilbert"]
+      trainer: ["Odilia"]
       warmup: true
 - date: 2026-12-17
   day: Donderdag
@@ -678,7 +678,7 @@
       training:
         core: "5 x (5' <tt>80% 10K</tt> + 5' <tt>100% 10K</tt>)"
         break: "SP2'"
-      trainer: ["Odilia"]
+      trainer: ["Wilbert"]
 - date: 2026-12-24
   day: Donderdag
   cancelled: true
